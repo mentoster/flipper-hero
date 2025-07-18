@@ -1,7 +1,7 @@
 
 #include "storage.h"
 #include <storage/storage.h>
-#include <flipper_format/flipper_format_i.h>
+#include <flipper_format/flipper_format.h>
 static Storage* flipper_hero_open_storage() {
     return furi_record_open(RECORD_STORAGE);
 }
