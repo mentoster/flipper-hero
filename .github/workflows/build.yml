@@ -42,9 +42,9 @@ jobs:
           sdk-index-url:  https://up.momentum-fw.dev/firmware/directory.json
           sdk-channel: release
 
-      - name: Rename unleashed artifact
+      - name: Rename momentum artifact
         run: |
-          mv "${{ steps.build-unleashed.outputs.fap-artifacts }}" flipper_hero_momentum.fap
+          mv "${{ steps.build-momentum.outputs.fap-artifacts }}" flipper_hero_momentum.fap
 
       - name: Create a new tag
         run: |
