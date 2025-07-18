@@ -12,7 +12,6 @@ App(
     fap_version="1.3",
     fap_commit="1602e6c14b8ced22ebe3f82dbe1fab5317071b30",
     fap_icon="icons/hex_10px.png",
-    fap_icon_assets="icons",
     fap_category="Games",
     fap_author="Mentoster",
     fap_description="Arrow Speed Game",
