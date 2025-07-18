@@ -1,3 +1,8 @@
+## v1.3
+
+- Updated for SDK version 1.3.0-rc f7 compatibility
+- Fixed FlipperFormat header include for newer SDK compatibility
+
 ## v1.2
 
 - fix scores on the start
