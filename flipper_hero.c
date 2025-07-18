@@ -4,6 +4,7 @@
 #include "data/data.h"
 #include "view/arrows.h"
 #include "helpers/storage.h"
+#include "flipper_hero_icons.h"
 
 #define MIN_ARROWS 3
 #define MAX_ARROWS 8
