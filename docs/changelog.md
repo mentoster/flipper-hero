@@ -2,6 +2,7 @@
 
 - Updated for SDK version 1.3.0-rc f7 compatibility
 - Fixed FlipperFormat header include for newer SDK compatibility
+- Record table!  yay 
 
 ## v1.2
 
