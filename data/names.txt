@@ -1,0 +1,242 @@
+case 0:
+    "MG-43 Machine Gun";
+    break;
+case 1:
+    return "APW-1 Anti Materiel Rifle";
+    break;
+case 2:
+    return "M-105 Stalwart";
+    break;
+case 3:
+    return "EAT-17 Expandable Anti-Tank";
+    break;
+case 4:
+    return "GR-8 Recoilless Rifle";
+    break;
+case 5:
+    return "FLAM-40 Flamethrower";
+    break;
+case 6:
+    return "AC-8 Autocannon";
+    break;
+case 7:
+    return "MG-206 Heavy Machine Gun";
+    break;
+case 8:
+    return "RL-77 Airburst Rocket Launcher";
+    break;
+case 9:
+    return "MLS-4X Commando";
+    break;
+case 10:
+    return "RS-422 Railgun";
+    break;
+case 11:
+    return "FAF-14 Spear";
+    break;
+case 12:
+    return "StA-X3 W.A.S.P. Launcher";
+    break;
+case 13:
+    return "GL-21 Grenade Launcher";
+    break;
+case 14:
+    return "LAS-98 Laser Cannon";
+    break;
+case 15:
+    return "ARC-3 Arc Thrower";
+    break;
+case 16:
+    return "LAS-99 Quasar Cannon";
+    break;
+case 17:
+    return "TX-41 Sterilizer";
+    break;
+case 18:
+    return "CQC-1 One True Flag";
+    break;
+case 19:
+    return "GL-52 De-Escalator";
+    break;
+case 20:
+    return "PLAS-45 Epoch";
+    break;
+case 21:
+    return "S-11 Speargun";
+    break;
+case 22:
+    return "EAT-700 Expendable Napalm";
+    break;
+case 23:
+    return "MS-11 Solo Silo";
+    break;
+case 24:
+    return "M-1000 Maxigun";
+    break;
+case 25:
+    return "CQC-9 Defoliation Tool";
+    break;
+case 26:
+    return "Orbital Gatling Barrage";
+    break;
+case 27:
+    return "Orbital Airburst Strike";
+    break;
+case 28:
+    return "Orbital 120mm HE Barrage";
+    break;
+case 29:
+    return "Orbital 380mm HE Barrage";
+    break;
+case 30:
+    return "Orbital Walking Barrage";
+    break;
+case 31:
+    return "Orbital Laser";
+    break;
+case 32:
+    return "Orbital Napalm Barrage";
+    break;
+case 33:
+    return "Orbital Railcannon Strike";
+    break;
+case 34:
+    return "Orbital Precision Strike";
+    break;
+case 35:
+    return "Orbital Gas Strike";
+    break;
+case 36:
+    return "Orbital EMS Strike";
+    break;
+case 37:
+    return "Orbital Smoke Strike";
+    break;
+case 38:
+    return "Eagle Strafing Run";
+    break;
+case 39:
+    return "Eagle Airstrike";
+    break;
+case 40:
+    return "Eagle Cluster Bomb";
+    break;
+case 41:
+    return "Eagle Napalm Airstrike";
+    break;
+case 42:
+    return "Eagle Smoke Strike";
+    break;
+case 43:
+    return "Eagle 110mm Rocket Pods";
+    break;
+case 44:
+    return "Eagle 500kg Bomb";
+    break;
+case 45:
+    return "LIFT-850 Jump Pack";
+    break;
+case 46:
+    return "LIFT-860 Hover Pack";
+    break;
+case 47:
+    return "LIFT-182 Warp Pack";
+    break;
+case 48:
+    return "B-1 Supply Pack";
+    break;
+case 49:
+    return "SH-32 Shield Generator Pack";
+    break;
+case 50:
+    return "SH-20 Ballistic Shield Backpack";
+    break;
+case 51:
+    return "SH-51 Directional Shield";
+    break;
+case 52:
+    return "AX/AR-23 'Guard Dog'";
+    break;
+case 53:
+    return "AX/LAS-5 'Guard Dog' Rover";
+    break;
+case 54:
+    return "AX/TX-13 'Guard Dog' Dog Breath";
+    break;
+case 55:
+    return "AX/ARC-3 'Guard Dog' K-9";
+    break;
+case 56:
+    return "AX-FLAM-75 'Guard Dog' Hot Dog";
+    break;
+case 57:
+    return "B-100 Portable Hellbomb";
+    break;
+case 58:
+    return "MD-6 Anti-Personnel Minefield";
+    break;
+case 59:
+    return "MD-I4 Incendiary Mines";
+    break;
+case 60:
+    return "MD-17 Anti-Tank Mines";
+    break;
+case 61:
+    return "MD-8 Gas Mines";
+    break;
+case 62:
+    return "A/ARC-3 Tesla Tower";
+    break;
+case 63:
+    return "E/MG-101 HMG Emplacement";
+    break;
+case 64:
+    return "E/AT-12 Anti-Tank Emplacement";
+    break;
+case 65:
+    return "E/GL-21 Grenadier Battlement";
+    break;
+case 66:
+    return "FX-12 Shield Generator Relay";
+    break;
+case 67:
+    return "A/MG-43 Machine Gun Sentry";
+    break;
+case 68:
+    return "A/G-16 Gatling Sentry";
+    break;
+case 69:
+    return "A/M-12 Mortar Sentry";
+    break;
+case 70:
+    return "A/AC-8 Autocannon Sentry";
+    break;
+case 71:
+    return "A/MLS-4X Rocket Sentry";
+    break;
+case 72:
+    return "A/M-23 EMS Mortar Sentry";
+    break;
+case 73:
+    return "A/FLAM-40 Flame Sentry";
+    break;
+case 74:
+    return "A/LAS-98 Laser Sentry";
+    break;
+case 75:
+    return "M-102 Fast Recon Vehicle";
+    break;
+case 76:
+    return "EXO-45 Patriot Exosuit";
+    break;
+case 77:
+    return "EXO-49 Emancipator Exosuit";
+    break;
+case 78:
+    return "Reinforce";
+    break;
+case 79:
+    return "Resupply";
+    break;
+case 80:
+    return "Hellbomb"
