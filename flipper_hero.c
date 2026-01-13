@@ -8,12 +8,10 @@
 #include "helpers/stratagem_data.h"
 #include "view/arrows.h"
 #include "helpers/storage.h"
-// #include "helpers/stratagem_data.h"
 #include "view/draw.h"
-#include "helpers/sound.h"
 // I'm using the code for sound from Doom by MMX @ https://github.com/xMasterX/all-the-plugins/tree/dev/base_pack/doom
 // Thanks for the permission, MMX!
-// #include "helpers/sound.h"
+#include "helpers/sound.h"
 
 
 
@@ -445,7 +443,7 @@ int32_t flipper_hero_app() {
     init_game_state(plugin_state);
     plugin_state->allowPauseInput = true;
     plugin_state->allowOkInput = true;
-    #ifdef SOUND
+#ifdef SOUND
     plugin_state->playing_sound = false;
     plugin_state->mus_timer = 0;
     plugin_state->music_instance = malloc(sizeof(MusicPlayer));

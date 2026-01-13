@@ -21,10 +21,11 @@
 #define MARQUEE_DISTANCE 10 // Amount of pixels marquee moves at a time
 #define MARQUEE_BASE_PADDING 10 // The minimum space (in pixels) between the start and end of marquee text
 
-
+// For adjusting the stratagem name display
 #define NAME_POS_Y 35
 #define NAME_PADDING_X 2
 #define NAME_PADDING_Y 1
+
 
 void update_marquee_data(PluginState* plugin_state);
 void init_marquee_data(Canvas* const canvas, PluginState* plugin_state);

@@ -26,7 +26,7 @@ typedef struct {
     int32_t score;
     int32_t round;
 
-    bool states[2];
+    // bool states[2];
 } Record;
 
 typedef enum {
