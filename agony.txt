@@ -1,0 +1,2398 @@
+scons: Entering directory `/home/beckett/.ufbt/current/scripts/ufbt'
+	CC	/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.c
+	CC	/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c
+In file included from /home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.h:1,
+                 from /home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.c:2:
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/../data/data.h:33:1: error: unknown type name 'MenuOption'
+   33 | MenuOption* create_menu_option()
+      | ^~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/../data/data.h: In function 'create_menu_option':
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/../data/data.h:89:3: error: storage class specified for parameter 'PluginState'
+   89 | } PluginState;
+      |   ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/../data/data.h:98:3: error: storage class specified for parameter 'ArrowDirection'
+   98 | } ArrowDirection;
+      |   ^~~~~~~~~~~~~~
+In file included from /home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:8,
+                 from /home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.c:3:
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:14:3: error: storage class specified for parameter 'FS_AccessMode'
+   14 | } FS_AccessMode;
+      |   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:23:3: error: storage class specified for parameter 'FS_OpenMode'
+   23 | } FS_OpenMode;
+      |   ^~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:37:3: error: storage class specified for parameter 'FS_Error'
+   37 | } FS_Error;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:42:3: error: storage class specified for parameter 'FS_Flags'
+   42 | } FS_Flags;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:45:21: error: storage class specified for parameter 'File'
+   45 | typedef struct File File;
+      |                     ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:51:3: error: storage class specified for parameter 'FileInfo'
+   51 | } FileInfo;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:57:43: error: expected declaration specifiers or '...' before 'FS_Error'
+   57 | const char* filesystem_api_error_get_desc(FS_Error error_id);
+      |                                           ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:63:29: error: type defaults to 'int' in declaration of 'FileInfo' [-Werror=implicit-int]
+   63 | bool file_info_is_dir(const FileInfo* file_info);
+      |                             ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:63:37: error: expected ';', ',' or ')' before '*' token
+   63 | bool file_info_is_dir(const FileInfo* file_info);
+      |                                     ^
+In file included from /home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:9:
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage_sd_api.h:17:3: error: storage class specified for parameter 'SDFsType'
+   17 | } SDFsType;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage_sd_api.h:20:5: error: expected specifier-qualifier-list before 'SDFsType'
+   20 |     SDFsType fs_type;
+      |     ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage_sd_api.h:35:3: error: storage class specified for parameter 'SDInfo'
+   35 | } SDInfo;
+      |   ^~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage_sd_api.h:37:37: error: expected declaration specifiers or '...' before 'SDFsType'
+   37 | const char* sd_api_get_fs_type_text(SDFsType fs_type);
+      |                                     ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:29:24: error: storage class specified for parameter 'Storage'
+   29 | typedef struct Storage Storage;
+      |                        ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:37:1: error: expected declaration specifiers before 'File'
+   37 | File* storage_file_alloc(Storage* storage);
+      | ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:45:24: error: expected declaration specifiers or '...' before 'File'
+   45 | void storage_file_free(File* file);
+      |                        ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:56:3: error: storage class specified for parameter 'StorageEventType'
+   56 | } StorageEventType;
+      |   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:62:5: error: expected specifier-qualifier-list before 'StorageEventType'
+   62 |     StorageEventType type; /**< Type of the event. */
+      |     ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:63:3: error: storage class specified for parameter 'StorageEvent'
+   63 | } StorageEvent;
+      |   ^~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:73:32: error: expected declaration specifiers or '...' before 'Storage'
+   73 | FuriPubSub* storage_get_pubsub(Storage* storage);
+      |                                ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:89:5: error: expected declaration specifiers or '...' before 'File'
+   89 |     File* file,
+      |     ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:91:5: error: expected declaration specifiers or '...' before 'FS_AccessMode'
+   91 |     FS_AccessMode access_mode,
+      |     ^~~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:92:5: error: expected declaration specifiers or '...' before 'FS_OpenMode'
+   92 |     FS_OpenMode open_mode);
+      |     ^~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:100:25: error: expected declaration specifiers or '...' before 'File'
+  100 | bool storage_file_close(File* file);
+      |                         ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:108:27: error: expected declaration specifiers or '...' before 'File'
+  108 | bool storage_file_is_open(File* file);
+      |                           ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:116:26: error: expected declaration specifiers or '...' before 'File'
+  116 | bool storage_file_is_dir(File* file);
+      |                          ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:126:26: error: expected declaration specifiers or '...' before 'File'
+  126 | size_t storage_file_read(File* file, void* buff, size_t bytes_to_read);
+      |                          ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:136:27: error: expected declaration specifiers or '...' before 'File'
+  136 | size_t storage_file_write(File* file, const void* buff, size_t bytes_to_write);
+      |                           ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:146:24: error: expected declaration specifiers or '...' before 'File'
+  146 | bool storage_file_seek(File* file, uint32_t offset, bool from_start);
+      |                        ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:154:28: error: expected declaration specifiers or '...' before 'File'
+  154 | uint64_t storage_file_tell(File* file);
+      |                            ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:162:28: error: expected declaration specifiers or '...' before 'File'
+  162 | bool storage_file_truncate(File* file);
+      |                            ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:170:28: error: expected declaration specifiers or '...' before 'File'
+  170 | uint64_t storage_file_size(File* file);
+      |                            ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:178:24: error: expected declaration specifiers or '...' before 'File'
+  178 | bool storage_file_sync(File* file);
+      |                        ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:186:23: error: expected declaration specifiers or '...' before 'File'
+  186 | bool storage_file_eof(File* file);
+      |                       ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:195:26: error: expected declaration specifiers or '...' before 'Storage'
+  195 | bool storage_file_exists(Storage* storage, const char* path);
+      |                          ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:210:32: error: expected declaration specifiers or '...' before 'File'
+  210 | bool storage_file_copy_to_file(File* source, File* destination, size_t size);
+      |                                ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:210:46: error: expected declaration specifiers or '...' before 'File'
+  210 | bool storage_file_copy_to_file(File* source, File* destination, size_t size);
+      |                                              ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:225:23: error: expected declaration specifiers or '...' before 'File'
+  225 | bool storage_dir_open(File* file, const char* path);
+      |                       ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:233:24: error: expected declaration specifiers or '...' before 'File'
+  233 | bool storage_dir_close(File* file);
+      |                        ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:247:23: error: expected declaration specifiers or '...' before 'File'
+  247 | bool storage_dir_read(File* file, FileInfo* fileinfo, char* name, uint16_t name_length);
+      |                       ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:247:35: error: expected declaration specifiers or '...' before 'FileInfo'
+  247 | bool storage_dir_read(File* file, FileInfo* fileinfo, char* name, uint16_t name_length);
+      |                                   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:255:25: error: expected declaration specifiers or '...' before 'File'
+  255 | bool storage_dir_rewind(File* file);
+      |                         ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:264:25: error: expected declaration specifiers or '...' before 'Storage'
+  264 | bool storage_dir_exists(Storage* storage, const char* path);
+      |                         ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:276:1: error: expected declaration specifiers before 'FS_Error'
+  276 | FS_Error storage_common_timestamp(Storage* storage, const char* path, uint32_t* timestamp);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:286:1: error: expected declaration specifiers before 'FS_Error'
+  286 | FS_Error storage_common_stat(Storage* storage, const char* path, FileInfo* fileinfo);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:298:1: error: expected declaration specifiers before 'FS_Error'
+  298 | FS_Error storage_common_remove(Storage* storage, const char* path);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:314:1: error: expected declaration specifiers before 'FS_Error'
+  314 | FS_Error storage_common_rename(Storage* storage, const char* old_path, const char* new_path);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:326:1: error: expected declaration specifiers before 'FS_Error'
+  326 | FS_Error storage_common_copy(Storage* storage, const char* old_path, const char* new_path);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:336:1: error: expected declaration specifiers before 'FS_Error'
+  336 | FS_Error storage_common_merge(Storage* storage, const char* old_path, const char* new_path);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:345:1: error: expected declaration specifiers before 'FS_Error'
+  345 | FS_Error storage_common_mkdir(Storage* storage, const char* path);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:356:1: error: expected declaration specifiers before 'FS_Error'
+  356 | FS_Error storage_common_fs_info(
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:370:59: error: expected declaration specifiers or '...' before 'Storage'
+  370 | void storage_common_resolve_path_and_ensure_app_directory(Storage* storage, FuriString* path);
+      |                                                           ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:382:1: error: expected declaration specifiers before 'FS_Error'
+  382 | FS_Error storage_common_migrate(Storage* storage, const char* source, const char* dest);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:391:28: error: expected declaration specifiers or '...' before 'Storage'
+  391 | bool storage_common_exists(Storage* storage, const char* path);
+      |                            ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:409:37: error: expected declaration specifiers or '...' before 'Storage'
+  409 | bool storage_common_equivalent_path(Storage* storage, const char* path1, const char* path2);
+      |                                     ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:423:31: error: expected declaration specifiers or '...' before 'Storage'
+  423 | bool storage_common_is_subdir(Storage* storage, const char* parent, const char* child);
+      |                               ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:433:36: error: expected declaration specifiers or '...' before 'FS_Error'
+  433 | const char* storage_error_get_desc(FS_Error error_id);
+      |                                    ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:443:1: error: expected declaration specifiers before 'FS_Error'
+  443 | FS_Error storage_file_get_error(File* file);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:453:41: error: expected declaration specifiers or '...' before 'File'
+  453 | int32_t storage_file_get_internal_error(File* file);
+      |                                         ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:463:41: error: expected declaration specifiers or '...' before 'File'
+  463 | const char* storage_file_get_error_desc(File* file);
+      |                                         ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:473:1: error: expected declaration specifiers before 'FS_Error'
+  473 | FS_Error storage_sd_format(Storage* storage);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:485:1: error: expected declaration specifiers before 'FS_Error'
+  485 | FS_Error storage_sd_unmount(Storage* storage);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:493:1: error: expected declaration specifiers before 'FS_Error'
+  493 | FS_Error storage_sd_mount(Storage* storage);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:502:1: error: expected declaration specifiers before 'FS_Error'
+  502 | FS_Error storage_sd_info(Storage* storage, SDInfo* info);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:510:1: error: expected declaration specifiers before 'FS_Error'
+  510 | FS_Error storage_sd_status(Storage* storage);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:514:16: error: storage class specified for parameter 'StorageNameConverter'
+  514 | typedef void (*StorageNameConverter)(FuriString*);
+      |                ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:523:1: error: expected declaration specifiers before 'FS_Error'
+  523 | FS_Error storage_int_backup(Storage* storage, const char* dstname);
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:533:1: error: expected declaration specifiers before 'FS_Error'
+  533 | FS_Error
+      | ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:549:28: error: expected declaration specifiers or '...' before 'Storage'
+  549 | bool storage_simply_remove(Storage* storage, const char* path);
+      |                            ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:560:38: error: expected declaration specifiers or '...' before 'Storage'
+  560 | bool storage_simply_remove_recursive(Storage* storage, const char* path);
+      |                                      ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:569:27: error: expected declaration specifiers or '...' before 'Storage'
+  569 | bool storage_simply_mkdir(Storage* storage, const char* path);
+      |                           ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:606:5: error: expected declaration specifiers or '...' before 'Storage'
+  606 |     Storage* storage,
+      |     ^~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.c:11:15: error: expected '=', ',', ';', 'asm' or '__attribute__' before '*' token
+   11 | static Storage* flipper_hero_open_storage() {
+      |               ^
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.c:15:42: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   15 | static void flipper_hero_close_storage() {
+      |                                          ^
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.c:19:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   19 | void save_game_records(Record* record) {
+      |                                        ^
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.c:32:40: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+   32 | bool load_game_records(Record* record) {
+      |                                        ^
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:514:16: error: declaration for parameter 'StorageNameConverter' but no such parameter
+  514 | typedef void (*StorageNameConverter)(FuriString*);
+      |                ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:63:3: error: declaration for parameter 'StorageEvent' but no such parameter
+   63 | } StorageEvent;
+      |   ^~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:56:3: error: declaration for parameter 'StorageEventType' but no such parameter
+   56 | } StorageEventType;
+      |   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:29:24: error: parameter 'Storage' has incomplete type
+   29 | typedef struct Storage Storage;
+      |                        ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:29:24: error: declaration for parameter 'Storage' but no such parameter
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage_sd_api.h:35:3: error: declaration for parameter 'SDInfo' but no such parameter
+   35 | } SDInfo;
+      |   ^~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage_sd_api.h:17:3: error: declaration for parameter 'SDFsType' but no such parameter
+   17 | } SDFsType;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:51:3: error: declaration for parameter 'FileInfo' but no such parameter
+   51 | } FileInfo;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:45:21: error: parameter 'File' has incomplete type
+   45 | typedef struct File File;
+      |                     ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:45:21: error: declaration for parameter 'File' but no such parameter
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:42:3: error: declaration for parameter 'FS_Flags' but no such parameter
+   42 | } FS_Flags;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:37:3: error: declaration for parameter 'FS_Error' but no such parameter
+   37 | } FS_Error;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:23:3: error: declaration for parameter 'FS_OpenMode' but no such parameter
+   23 | } FS_OpenMode;
+      |   ^~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:14:3: error: declaration for parameter 'FS_AccessMode' but no such parameter
+   14 | } FS_AccessMode;
+      |   ^~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.h:7:6: error: declaration for parameter 'load_game_records' but no such parameter
+    7 | bool load_game_records(Record* record);
+      |      ^~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.h:6:6: error: declaration for parameter 'save_game_records' but no such parameter
+    6 | void save_game_records(Record* record);
+      |      ^~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/../data/data.h:98:3: error: declaration for parameter 'ArrowDirection' but no such parameter
+   98 | } ArrowDirection;
+      |   ^~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/../data/data.h:89:3: error: declaration for parameter 'PluginState' but no such parameter
+   89 | } PluginState;
+      |   ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.c:48: error: expected '{' at end of input
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:514:16: error: unused parameter 'StorageNameConverter' [-Werror=unused-parameter]
+  514 | typedef void (*StorageNameConverter)(FuriString*);
+      |                ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:63:3: error: unused parameter 'StorageEvent' [-Werror=unused-parameter]
+   63 | } StorageEvent;
+      |   ^~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:56:3: error: unused parameter 'StorageEventType' [-Werror=unused-parameter]
+   56 | } StorageEventType;
+      |   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage.h:29:24: error: unused parameter 'Storage' [-Werror=unused-parameter]
+   29 | typedef struct Storage Storage;
+      |                        ^~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage_sd_api.h:35:3: error: unused parameter 'SDInfo' [-Werror=unused-parameter]
+   35 | } SDInfo;
+      |   ^~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/storage_sd_api.h:17:3: error: unused parameter 'SDFsType' [-Werror=unused-parameter]
+   17 | } SDFsType;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:51:3: error: unused parameter 'FileInfo' [-Werror=unused-parameter]
+   51 | } FileInfo;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:45:21: error: unused parameter 'File' [-Werror=unused-parameter]
+   45 | typedef struct File File;
+      |                     ^~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:42:3: error: unused parameter 'FS_Flags' [-Werror=unused-parameter]
+   42 | } FS_Flags;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:37:3: error: unused parameter 'FS_Error' [-Werror=unused-parameter]
+   37 | } FS_Error;
+      |   ^~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:23:3: error: unused parameter 'FS_OpenMode' [-Werror=unused-parameter]
+   23 | } FS_OpenMode;
+      |   ^~~~~~~~~~~
+/home/beckett/.ufbt/current/sdk_headers/f7_sdk/applications/services/storage/filesystem_api_defines.h:14:3: error: unused parameter 'FS_AccessMode' [-Werror=unused-parameter]
+   14 | } FS_AccessMode;
+      |   ^~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.h:7:6: error: unused parameter 'load_game_records' [-Werror=unused-parameter]
+    7 | bool load_game_records(Record* record);
+      |      ^~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.h:6:6: error: unused parameter 'save_game_records' [-Werror=unused-parameter]
+    6 | void save_game_records(Record* record);
+      |      ^~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/../data/data.h:98:3: error: unused parameter 'ArrowDirection' [-Werror=unused-parameter]
+   98 | } ArrowDirection;
+      |   ^~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/../data/data.h:89:3: error: unused parameter 'PluginState' [-Werror=unused-parameter]
+   89 | } PluginState;
+      |   ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.c:48: error: control reaches end of non-void function [-Werror=return-type]
+cc1: all warnings being treated as errors
+scons: *** [/home/beckett/.ufbt/build/flipper_hero/helpers/storage.o] Error 1
+In file included from /home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:7:
+/home/beckett/Downloads/Flipper/flipper-hero/data/data.h:33:1: error: unknown type name 'MenuOption'
+   33 | MenuOption* create_menu_option()
+      | ^~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/data/data.h: In function 'create_menu_option':
+/home/beckett/Downloads/Flipper/flipper-hero/data/data.h:89:3: error: storage class specified for parameter 'PluginState'
+   89 | } PluginState;
+      |   ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/data/data.h:98:3: error: storage class specified for parameter 'ArrowDirection'
+   98 | } ArrowDirection;
+      |   ^~~~~~~~~~~~~~
+In file included from /home/beckett/Downloads/Flipper/flipper-hero/helpers/stratagem_data.h:3,
+                 from /home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:10:
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:5:19: error: storage class specified for parameter 'I_flipper_hero_128x50'
+    5 | extern const Icon I_flipper_hero_128x50;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:6:19: error: storage class specified for parameter 'I_hex_10px'
+    6 | extern const Icon I_hex_10px;
+      |                   ^~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:7:19: error: storage class specified for parameter 'I_e_110mm_15x15'
+    7 | extern const Icon I_e_110mm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:8:19: error: storage class specified for parameter 'I_e_500kg_15x15'
+    8 | extern const Icon I_e_500kg_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:9:19: error: storage class specified for parameter 'I_e_airstrike_15x15'
+    9 | extern const Icon I_e_airstrike_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:10:19: error: storage class specified for parameter 'I_e_cluster_15x15'
+   10 | extern const Icon I_e_cluster_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:11:19: error: storage class specified for parameter 'I_e_napalm_15x15'
+   11 | extern const Icon I_e_napalm_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:12:19: error: storage class specified for parameter 'I_e_silo_15x15'
+   12 | extern const Icon I_e_silo_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:13:19: error: storage class specified for parameter 'I_e_smoke_15x15'
+   13 | extern const Icon I_e_smoke_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:14:19: error: storage class specified for parameter 'I_e_strafing_15x15'
+   14 | extern const Icon I_e_strafing_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:15:19: error: storage class specified for parameter 'I_eagle_15x15'
+   15 | extern const Icon I_eagle_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:16:19: error: storage class specified for parameter 'I_emp_antitank_15x15'
+   16 | extern const Icon I_emp_antitank_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:17:19: error: storage class specified for parameter 'I_emp_hmg_15x15'
+   17 | extern const Icon I_emp_hmg_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:18:19: error: storage class specified for parameter 'I_gd_15x15'
+   18 | extern const Icon I_gd_15x15;
+      |                   ^~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:19:19: error: storage class specified for parameter 'I_gd_arc_15x15'
+   19 | extern const Icon I_gd_arc_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:20:19: error: storage class specified for parameter 'I_gd_flam_15x15'
+   20 | extern const Icon I_gd_flam_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:21:19: error: storage class specified for parameter 'I_gd_gas_15x15'
+   21 | extern const Icon I_gd_gas_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:22:19: error: storage class specified for parameter 'I_gd_las_15x15'
+   22 | extern const Icon I_gd_las_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:23:19: error: storage class specified for parameter 'I_m_antitank_15x15'
+   23 | extern const Icon I_m_antitank_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:24:19: error: storage class specified for parameter 'I_m_ap_15x15'
+   24 | extern const Icon I_m_ap_15x15;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:25:19: error: storage class specified for parameter 'I_m_battlement_15x15'
+   25 | extern const Icon I_m_battlement_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:26:19: error: storage class specified for parameter 'I_m_cargo_15x15'
+   26 | extern const Icon I_m_cargo_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:27:19: error: storage class specified for parameter 'I_m_drill_15x15'
+   27 | extern const Icon I_m_drill_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:28:19: error: storage class specified for parameter 'I_m_flag_15x15'
+   28 | extern const Icon I_m_flag_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:29:19: error: storage class specified for parameter 'I_m_gas_15x15'
+   29 | extern const Icon I_m_gas_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:30:19: error: storage class specified for parameter 'I_m_hellbomb_15x15'
+   30 | extern const Icon I_m_hellbomb_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:31:19: error: storage class specified for parameter 'I_m_incendiary_15x15'
+   31 | extern const Icon I_m_incendiary_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:32:19: error: storage class specified for parameter 'I_m_rearm_15x15'
+   32 | extern const Icon I_m_rearm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:33:19: error: storage class specified for parameter 'I_m_reinforce_15x15'
+   33 | extern const Icon I_m_reinforce_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:34:19: error: storage class specified for parameter 'I_m_relay_15x15'
+   34 | extern const Icon I_m_relay_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:35:19: error: storage class specified for parameter 'I_m_resupply_15x15'
+   35 | extern const Icon I_m_resupply_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:36:19: error: storage class specified for parameter 'I_m_seaf_artillery_15x15'
+   36 | extern const Icon I_m_seaf_artillery_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:37:19: error: storage class specified for parameter 'I_m_seismic_probe_15x15'
+   37 | extern const Icon I_m_seismic_probe_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:38:19: error: storage class specified for parameter 'I_m_sos_15x15'
+   38 | extern const Icon I_m_sos_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:39:19: error: storage class specified for parameter 'I_m_sssd_15x15'
+   39 | extern const Icon I_m_sssd_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:40:19: error: storage class specified for parameter 'I_m_tesla_15x15'
+   40 | extern const Icon I_m_tesla_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:41:19: error: storage class specified for parameter 'I_m_upload_15x15'
+   41 | extern const Icon I_m_upload_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:42:19: error: storage class specified for parameter 'I_m_vessel_15x15'
+   42 | extern const Icon I_m_vessel_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:43:19: error: storage class specified for parameter 'I_o_120mm_15x15'
+   43 | extern const Icon I_o_120mm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:44:19: error: storage class specified for parameter 'I_o_380mm_15x15'
+   44 | extern const Icon I_o_380mm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:45:19: error: storage class specified for parameter 'I_o_airburst_15x15'
+   45 | extern const Icon I_o_airburst_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:46:19: error: storage class specified for parameter 'I_o_ems_15x15'
+   46 | extern const Icon I_o_ems_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:47:19: error: storage class specified for parameter 'I_o_gas_15x15'
+   47 | extern const Icon I_o_gas_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:48:19: error: storage class specified for parameter 'I_o_gatling_15x15'
+   48 | extern const Icon I_o_gatling_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:49:19: error: storage class specified for parameter 'I_o_laser_15x15'
+   49 | extern const Icon I_o_laser_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:50:19: error: storage class specified for parameter 'I_o_napalm_15x15'
+   50 | extern const Icon I_o_napalm_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:51:19: error: storage class specified for parameter 'I_o_precision_15x15'
+   51 | extern const Icon I_o_precision_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:52:19: error: storage class specified for parameter 'I_o_railcannon_15x15'
+   52 | extern const Icon I_o_railcannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:53:19: error: storage class specified for parameter 'I_o_smoke_15x15'
+   53 | extern const Icon I_o_smoke_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:54:19: error: storage class specified for parameter 'I_o_walking_15x15'
+   54 | extern const Icon I_o_walking_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:55:19: error: storage class specified for parameter 'I_p_hellbomb_15x15'
+   55 | extern const Icon I_p_hellbomb_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:56:19: error: storage class specified for parameter 'I_p_hover_15x15'
+   56 | extern const Icon I_p_hover_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:57:19: error: storage class specified for parameter 'I_p_jump_15x15'
+   57 | extern const Icon I_p_jump_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:58:19: error: storage class specified for parameter 'I_p_s_ballistic_15x15'
+   58 | extern const Icon I_p_s_ballistic_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:59:19: error: storage class specified for parameter 'I_p_s_directional_15x15'
+   59 | extern const Icon I_p_s_directional_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:60:19: error: storage class specified for parameter 'I_p_s_generator_15x15'
+   60 | extern const Icon I_p_s_generator_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:61:19: error: storage class specified for parameter 'I_p_supply_15x15'
+   61 | extern const Icon I_p_supply_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:62:19: error: storage class specified for parameter 'I_p_warp_15x15'
+   62 | extern const Icon I_p_warp_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:63:19: error: storage class specified for parameter 'I_s_autocannon_15x15'
+   63 | extern const Icon I_s_autocannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:64:19: error: storage class specified for parameter 'I_s_blank_15x15'
+   64 | extern const Icon I_s_blank_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:65:19: error: storage class specified for parameter 'I_s_ems_mortar_15x15'
+   65 | extern const Icon I_s_ems_mortar_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:66:19: error: storage class specified for parameter 'I_s_flame_15x15'
+   66 | extern const Icon I_s_flame_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:67:19: error: storage class specified for parameter 'I_s_gatling_15x15'
+   67 | extern const Icon I_s_gatling_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:68:19: error: storage class specified for parameter 'I_s_laser_15x15'
+   68 | extern const Icon I_s_laser_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:69:19: error: storage class specified for parameter 'I_s_mg_15x15'
+   69 | extern const Icon I_s_mg_15x15;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:70:19: error: storage class specified for parameter 'I_s_mortar_15x15'
+   70 | extern const Icon I_s_mortar_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:71:19: error: storage class specified for parameter 'I_s_rocket_15x15'
+   71 | extern const Icon I_s_rocket_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:72:19: error: storage class specified for parameter 'I_v_emancipator_15x15'
+   72 | extern const Icon I_v_emancipator_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:73:19: error: storage class specified for parameter 'I_v_frv_15x15'
+   73 | extern const Icon I_v_frv_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:74:19: error: storage class specified for parameter 'I_v_patriot_15x15'
+   74 | extern const Icon I_v_patriot_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:75:19: error: storage class specified for parameter 'I_w_airburst_15x15'
+   75 | extern const Icon I_w_airburst_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:76:19: error: storage class specified for parameter 'I_w_amr_15x15'
+   76 | extern const Icon I_w_amr_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:77:19: error: storage class specified for parameter 'I_w_arc_15x15'
+   77 | extern const Icon I_w_arc_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:78:19: error: storage class specified for parameter 'I_w_autocannon_15x15'
+   78 | extern const Icon I_w_autocannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:79:19: error: storage class specified for parameter 'I_w_commando_15x15'
+   79 | extern const Icon I_w_commando_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:80:19: error: storage class specified for parameter 'I_w_de_escalator_15x15'
+   80 | extern const Icon I_w_de_escalator_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:81:19: error: storage class specified for parameter 'I_w_eat_15x15'
+   81 | extern const Icon I_w_eat_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:82:19: error: storage class specified for parameter 'I_w_eat_napalm_15x15'
+   82 | extern const Icon I_w_eat_napalm_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:83:19: error: storage class specified for parameter 'I_w_epoch_15x15'
+   83 | extern const Icon I_w_epoch_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:84:19: error: storage class specified for parameter 'I_w_flag_15x15'
+   84 | extern const Icon I_w_flag_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:85:19: error: storage class specified for parameter 'I_w_flamethrower_15x15'
+   85 | extern const Icon I_w_flamethrower_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:86:19: error: storage class specified for parameter 'I_w_grenade_launcher_15x15'
+   86 | extern const Icon I_w_grenade_launcher_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:87:19: error: storage class specified for parameter 'I_w_hmg_15x15'
+   87 | extern const Icon I_w_hmg_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:88:19: error: storage class specified for parameter 'I_w_laser_cannon_15x15'
+   88 | extern const Icon I_w_laser_cannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:89:19: error: storage class specified for parameter 'I_w_maxigun_15x15'
+   89 | extern const Icon I_w_maxigun_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:90:19: error: storage class specified for parameter 'I_w_mg_15x15'
+   90 | extern const Icon I_w_mg_15x15;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:91:19: error: storage class specified for parameter 'I_w_quasar_15x15'
+   91 | extern const Icon I_w_quasar_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:92:19: error: storage class specified for parameter 'I_w_railgun_15x15'
+   92 | extern const Icon I_w_railgun_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:93:19: error: storage class specified for parameter 'I_w_recoilless_15x15'
+   93 | extern const Icon I_w_recoilless_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:94:19: error: storage class specified for parameter 'I_w_spear_15x15'
+   94 | extern const Icon I_w_spear_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:95:19: error: storage class specified for parameter 'I_w_speargun_15x15'
+   95 | extern const Icon I_w_speargun_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:96:19: error: storage class specified for parameter 'I_w_stalwart_15x15'
+   96 | extern const Icon I_w_stalwart_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:97:19: error: storage class specified for parameter 'I_w_sterilizer_15x15'
+   97 | extern const Icon I_w_sterilizer_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:98:19: error: storage class specified for parameter 'I_w_tool_15x15'
+   98 | extern const Icon I_w_tool_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:99:19: error: storage class specified for parameter 'I_w_wasp_15x15'
+   99 | extern const Icon I_w_wasp_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:100:19: error: storage class specified for parameter 'I_e_110mm_30x30'
+  100 | extern const Icon I_e_110mm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:101:19: error: storage class specified for parameter 'I_e_500kg_30x30'
+  101 | extern const Icon I_e_500kg_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:102:19: error: storage class specified for parameter 'I_e_airstrike_30x30'
+  102 | extern const Icon I_e_airstrike_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:103:19: error: storage class specified for parameter 'I_e_cluster_30x30'
+  103 | extern const Icon I_e_cluster_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:104:19: error: storage class specified for parameter 'I_e_napalm_30x30'
+  104 | extern const Icon I_e_napalm_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:105:19: error: storage class specified for parameter 'I_e_silo_30x30'
+  105 | extern const Icon I_e_silo_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:106:19: error: storage class specified for parameter 'I_e_smoke_30x30'
+  106 | extern const Icon I_e_smoke_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:107:19: error: storage class specified for parameter 'I_e_strafing_30x30'
+  107 | extern const Icon I_e_strafing_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:108:19: error: storage class specified for parameter 'I_eagle_30x30'
+  108 | extern const Icon I_eagle_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:109:19: error: storage class specified for parameter 'I_emp_antitank_30x30'
+  109 | extern const Icon I_emp_antitank_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:110:19: error: storage class specified for parameter 'I_emp_hmg_30x30'
+  110 | extern const Icon I_emp_hmg_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:111:19: error: storage class specified for parameter 'I_gd_30x30'
+  111 | extern const Icon I_gd_30x30;
+      |                   ^~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:112:19: error: storage class specified for parameter 'I_gd_arc_30x30'
+  112 | extern const Icon I_gd_arc_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:113:19: error: storage class specified for parameter 'I_gd_flam_30x30'
+  113 | extern const Icon I_gd_flam_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:114:19: error: storage class specified for parameter 'I_gd_gas_30x30'
+  114 | extern const Icon I_gd_gas_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:115:19: error: storage class specified for parameter 'I_gd_las_30x30'
+  115 | extern const Icon I_gd_las_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:116:19: error: storage class specified for parameter 'I_m_antitank_30x30'
+  116 | extern const Icon I_m_antitank_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:117:19: error: storage class specified for parameter 'I_m_ap_30x30'
+  117 | extern const Icon I_m_ap_30x30;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:118:19: error: storage class specified for parameter 'I_m_battlement_30x30'
+  118 | extern const Icon I_m_battlement_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:119:19: error: storage class specified for parameter 'I_m_cargo_30x30'
+  119 | extern const Icon I_m_cargo_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:120:19: error: storage class specified for parameter 'I_m_drill_30x30'
+  120 | extern const Icon I_m_drill_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:121:19: error: storage class specified for parameter 'I_m_flag_30x30'
+  121 | extern const Icon I_m_flag_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:122:19: error: storage class specified for parameter 'I_m_gas_30x30'
+  122 | extern const Icon I_m_gas_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:123:19: error: storage class specified for parameter 'I_m_hellbomb_30x30'
+  123 | extern const Icon I_m_hellbomb_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:124:19: error: storage class specified for parameter 'I_m_incendiary_30x30'
+  124 | extern const Icon I_m_incendiary_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:125:19: error: storage class specified for parameter 'I_m_rearm_30x30'
+  125 | extern const Icon I_m_rearm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:126:19: error: storage class specified for parameter 'I_m_reinforce_30x30'
+  126 | extern const Icon I_m_reinforce_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:127:19: error: storage class specified for parameter 'I_m_relay_30x30'
+  127 | extern const Icon I_m_relay_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:128:19: error: storage class specified for parameter 'I_m_resupply_30x30'
+  128 | extern const Icon I_m_resupply_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:129:19: error: storage class specified for parameter 'I_m_seaf_artillery_30x30'
+  129 | extern const Icon I_m_seaf_artillery_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:130:19: error: storage class specified for parameter 'I_m_seismic_probe_30x30'
+  130 | extern const Icon I_m_seismic_probe_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:131:19: error: storage class specified for parameter 'I_m_sos_30x30'
+  131 | extern const Icon I_m_sos_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:132:19: error: storage class specified for parameter 'I_m_sssd_30x30'
+  132 | extern const Icon I_m_sssd_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:133:19: error: storage class specified for parameter 'I_m_tesla_30x30'
+  133 | extern const Icon I_m_tesla_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:134:19: error: storage class specified for parameter 'I_m_upload_30x30'
+  134 | extern const Icon I_m_upload_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:135:19: error: storage class specified for parameter 'I_m_vessel_30x30'
+  135 | extern const Icon I_m_vessel_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:136:19: error: storage class specified for parameter 'I_o_120mm_30x30'
+  136 | extern const Icon I_o_120mm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:137:19: error: storage class specified for parameter 'I_o_380mm_30x30'
+  137 | extern const Icon I_o_380mm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:138:19: error: storage class specified for parameter 'I_o_airburst_30x30'
+  138 | extern const Icon I_o_airburst_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:139:19: error: storage class specified for parameter 'I_o_ems_30x30'
+  139 | extern const Icon I_o_ems_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:140:19: error: storage class specified for parameter 'I_o_gas_30x30'
+  140 | extern const Icon I_o_gas_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:141:19: error: storage class specified for parameter 'I_o_gatling_30x30'
+  141 | extern const Icon I_o_gatling_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:142:19: error: storage class specified for parameter 'I_o_laser_30x30'
+  142 | extern const Icon I_o_laser_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:143:19: error: storage class specified for parameter 'I_o_napalm_30x30'
+  143 | extern const Icon I_o_napalm_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:144:19: error: storage class specified for parameter 'I_o_precision_30x30'
+  144 | extern const Icon I_o_precision_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:145:19: error: storage class specified for parameter 'I_o_railcannon_30x30'
+  145 | extern const Icon I_o_railcannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:146:19: error: storage class specified for parameter 'I_o_smoke_30x30'
+  146 | extern const Icon I_o_smoke_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:147:19: error: storage class specified for parameter 'I_o_walking_30x30'
+  147 | extern const Icon I_o_walking_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:148:19: error: storage class specified for parameter 'I_orbital_30x30'
+  148 | extern const Icon I_orbital_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:149:19: error: storage class specified for parameter 'I_p_hellbomb_30x30'
+  149 | extern const Icon I_p_hellbomb_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:150:19: error: storage class specified for parameter 'I_p_hover_30x30'
+  150 | extern const Icon I_p_hover_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:151:19: error: storage class specified for parameter 'I_p_jump_30x30'
+  151 | extern const Icon I_p_jump_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:152:19: error: storage class specified for parameter 'I_p_s_ballistic_30x30'
+  152 | extern const Icon I_p_s_ballistic_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:153:19: error: storage class specified for parameter 'I_p_s_directional_30x30'
+  153 | extern const Icon I_p_s_directional_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:154:19: error: storage class specified for parameter 'I_p_s_generator_30x30'
+  154 | extern const Icon I_p_s_generator_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:155:19: error: storage class specified for parameter 'I_p_supply_30x30'
+  155 | extern const Icon I_p_supply_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:156:19: error: storage class specified for parameter 'I_p_warp_30x30'
+  156 | extern const Icon I_p_warp_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:157:19: error: storage class specified for parameter 'I_s_autocannon_30x30'
+  157 | extern const Icon I_s_autocannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:158:19: error: storage class specified for parameter 'I_s_blank_30x30'
+  158 | extern const Icon I_s_blank_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:159:19: error: storage class specified for parameter 'I_s_ems_mortar_30x30'
+  159 | extern const Icon I_s_ems_mortar_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:160:19: error: storage class specified for parameter 'I_s_flame_30x30'
+  160 | extern const Icon I_s_flame_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:161:19: error: storage class specified for parameter 'I_s_gatling_30x30'
+  161 | extern const Icon I_s_gatling_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:162:19: error: storage class specified for parameter 'I_s_laser_30x30'
+  162 | extern const Icon I_s_laser_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:163:19: error: storage class specified for parameter 'I_s_mg_30x30'
+  163 | extern const Icon I_s_mg_30x30;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:164:19: error: storage class specified for parameter 'I_s_mortar_30x30'
+  164 | extern const Icon I_s_mortar_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:165:19: error: storage class specified for parameter 'I_s_rocket_30x30'
+  165 | extern const Icon I_s_rocket_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:166:19: error: storage class specified for parameter 'I_v_emancipator_30x30'
+  166 | extern const Icon I_v_emancipator_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:167:19: error: storage class specified for parameter 'I_v_frv_30x30'
+  167 | extern const Icon I_v_frv_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:168:19: error: storage class specified for parameter 'I_v_patriot_30x30'
+  168 | extern const Icon I_v_patriot_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:169:19: error: storage class specified for parameter 'I_w_airburst_30x30'
+  169 | extern const Icon I_w_airburst_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:170:19: error: storage class specified for parameter 'I_w_amr_30x30'
+  170 | extern const Icon I_w_amr_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:171:19: error: storage class specified for parameter 'I_w_arc_30x30'
+  171 | extern const Icon I_w_arc_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:172:19: error: storage class specified for parameter 'I_w_autocannon_30x30'
+  172 | extern const Icon I_w_autocannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:173:19: error: storage class specified for parameter 'I_w_commando_30x30'
+  173 | extern const Icon I_w_commando_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:174:19: error: storage class specified for parameter 'I_w_de_escalator_30x30'
+  174 | extern const Icon I_w_de_escalator_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:175:19: error: storage class specified for parameter 'I_w_eat_30x30'
+  175 | extern const Icon I_w_eat_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:176:19: error: storage class specified for parameter 'I_w_eat_napalm_30x30'
+  176 | extern const Icon I_w_eat_napalm_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:177:19: error: storage class specified for parameter 'I_w_epoch_30x30'
+  177 | extern const Icon I_w_epoch_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:178:19: error: storage class specified for parameter 'I_w_flag_30x30'
+  178 | extern const Icon I_w_flag_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:179:19: error: storage class specified for parameter 'I_w_flamethrower_30x30'
+  179 | extern const Icon I_w_flamethrower_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:180:19: error: storage class specified for parameter 'I_w_grenade_launcher_30x30'
+  180 | extern const Icon I_w_grenade_launcher_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:181:19: error: storage class specified for parameter 'I_w_hmg_30x30'
+  181 | extern const Icon I_w_hmg_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:182:19: error: storage class specified for parameter 'I_w_laser_cannon_30x30'
+  182 | extern const Icon I_w_laser_cannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:183:19: error: storage class specified for parameter 'I_w_maxigun_30x30'
+  183 | extern const Icon I_w_maxigun_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:184:19: error: storage class specified for parameter 'I_w_mg_30x30'
+  184 | extern const Icon I_w_mg_30x30;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:185:19: error: storage class specified for parameter 'I_w_quasar_30x30'
+  185 | extern const Icon I_w_quasar_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:186:19: error: storage class specified for parameter 'I_w_railgun_30x30'
+  186 | extern const Icon I_w_railgun_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:187:19: error: storage class specified for parameter 'I_w_recoilless_30x30'
+  187 | extern const Icon I_w_recoilless_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:188:19: error: storage class specified for parameter 'I_w_spear_30x30'
+  188 | extern const Icon I_w_spear_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:189:19: error: storage class specified for parameter 'I_w_speargun_30x30'
+  189 | extern const Icon I_w_speargun_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:190:19: error: storage class specified for parameter 'I_w_stalwart_30x30'
+  190 | extern const Icon I_w_stalwart_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:191:19: error: storage class specified for parameter 'I_w_sterilizer_30x30'
+  191 | extern const Icon I_w_sterilizer_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:192:19: error: storage class specified for parameter 'I_w_tool_30x30'
+  192 | extern const Icon I_w_tool_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:193:19: error: storage class specified for parameter 'I_w_wasp_30x30'
+  193 | extern const Icon I_w_wasp_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:39:17: error: expected declaration specifiers or '...' before 'PluginState'
+   39 | void stop_sound(PluginState* plugin_state) {
+      |                 ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:46:18: error: expected declaration specifiers or '...' before 'PluginState'
+   46 | void start_sound(PluginState* plugin_state, int selection) {
+      |                  ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:77:27: error: expected declaration specifiers or '...' before 'PluginState'
+   77 | void fill_stratagem_queue(PluginState* plugin_state) {
+      |                           ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:91:22: error: expected declaration specifiers or '...' before 'PluginState'
+   91 | void generate_arrows(PluginState* plugin_state) {
+      |                      ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:114:20: error: expected declaration specifiers or '...' before 'PluginState'
+  114 | void advance_round(PluginState* plugin_state) {
+      |                    ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:121:29: error: expected declaration specifiers or '...' before 'PluginState'
+  121 | void update_score_and_timer(PluginState* plugin_state) {
+      |                             ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:132:15: error: expected declaration specifiers or '...' before 'PluginState'
+  132 | void end_game(PluginState* plugin_state) {
+      |               ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:148:18: error: expected declaration specifiers or '...' before 'PluginState'
+  148 | void start_round(PluginState* plugin_state) {
+      |                  ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:157:64: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  157 | static void input_callback(InputEvent* input_event, void* ctx) {
+      |                                                                ^
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:164:26: error: expected declaration specifiers or '...' before 'PluginState'
+  164 | void update_marquee_data(PluginState* plugin_state) {
+      |                          ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:174:43: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  174 | static void timer_callback(void* context) {
+      |                                           ^
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:240:25: error: expected declaration specifiers or '...' before 'PluginState'
+  240 | void handle_arrow_input(PluginState* plugin_state, InputEvent input_event) {
+      |                         ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:269:22: error: expected declaration specifiers or '...' before 'PluginState'
+  269 | void init_game_state(PluginState* plugin_state) {
+      |                      ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:285:17: error: expected declaration specifiers or '...' before 'PluginState'
+  285 | void start_game(PluginState* plugin_state, FuriTimer* timer) {
+      |                 ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:292:23: error: expected declaration specifiers or '...' before 'PluginState'
+  292 | void draw_round_score(PluginState* plugin_state, Canvas* const canvas) {
+      |                       ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:328:21: error: expected declaration specifiers or '...' before 'PluginState'
+  328 | void draw_pre_round(PluginState* plugin_state, Canvas* const canvas) {
+      |                     ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:337:46: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  337 | void draw_start_screen(Canvas* const canvas) {
+      |                                              ^
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:342:50: error: expected declaration specifiers or '...' before 'PluginState'
+  342 | void draw_game_over_screen(Canvas* const canvas, PluginState* plugin_state) {
+      |                                                  ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:365:46: error: expected declaration specifiers or '...' before 'PluginState'
+  365 | void init_marquee_data(Canvas* const canvas, PluginState* plugin_state) {
+      |                                              ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:380:38: error: expected declaration specifiers or '...' before 'PluginState'
+  380 | void draw_name(Canvas* const canvas, PluginState* plugin_state) {
+      |                                      ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:410:63: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  410 | void draw_game_ui(Canvas* const canvas, int round, int score) {
+      |                                                               ^
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:431:22: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  431 |     bool large_icon) {
+      |                      ^
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:446:39: error: expected declaration specifiers or '...' before 'PluginState'
+  446 | void draw_queue(Canvas* const canvas, PluginState* plugin_state) {
+      |                                       ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:472:40: error: expected declaration specifiers or '...' before 'PluginState'
+  472 | void draw_arrows(Canvas* const canvas, PluginState* plugin_state) {
+      |                                        ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:486:57: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  486 | void draw_progress_box(Canvas* const canvas, int timer) {
+      |                                                         ^
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:492:62: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  492 | static void render_callback(Canvas* const canvas, void* ctx) {
+      |                                                              ^
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:521:28: error: expected '=', ',', ';', 'asm' or '__attribute__' before '{' token
+  521 | int32_t flipper_hero_app() {
+      |                            ^
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/stratagem_data.h:10:6: error: declaration for parameter 'get_stratagem_seq' but no such parameter
+   10 | void get_stratagem_seq(char seq_buf[9], int i);
+      |      ^~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/stratagem_data.h:9:7: error: declaration for parameter 'get_stratagem_icon' but no such parameter
+    9 | Icon* get_stratagem_icon(int i, bool large_icon);
+      |       ^~~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/stratagem_data.h:8:6: error: declaration for parameter 'get_stratagem_name' but no such parameter
+    8 | void get_stratagem_name(char name_buf[32], int i);
+      |      ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:193:19: error: parameter 'I_w_wasp_30x30' has incomplete type
+  193 | extern const Icon I_w_wasp_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:193:19: error: declaration for parameter 'I_w_wasp_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:192:19: error: parameter 'I_w_tool_30x30' has incomplete type
+  192 | extern const Icon I_w_tool_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:192:19: error: declaration for parameter 'I_w_tool_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:191:19: error: parameter 'I_w_sterilizer_30x30' has incomplete type
+  191 | extern const Icon I_w_sterilizer_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:191:19: error: declaration for parameter 'I_w_sterilizer_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:190:19: error: parameter 'I_w_stalwart_30x30' has incomplete type
+  190 | extern const Icon I_w_stalwart_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:190:19: error: declaration for parameter 'I_w_stalwart_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:189:19: error: parameter 'I_w_speargun_30x30' has incomplete type
+  189 | extern const Icon I_w_speargun_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:189:19: error: declaration for parameter 'I_w_speargun_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:188:19: error: parameter 'I_w_spear_30x30' has incomplete type
+  188 | extern const Icon I_w_spear_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:188:19: error: declaration for parameter 'I_w_spear_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:187:19: error: parameter 'I_w_recoilless_30x30' has incomplete type
+  187 | extern const Icon I_w_recoilless_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:187:19: error: declaration for parameter 'I_w_recoilless_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:186:19: error: parameter 'I_w_railgun_30x30' has incomplete type
+  186 | extern const Icon I_w_railgun_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:186:19: error: declaration for parameter 'I_w_railgun_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:185:19: error: parameter 'I_w_quasar_30x30' has incomplete type
+  185 | extern const Icon I_w_quasar_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:185:19: error: declaration for parameter 'I_w_quasar_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:184:19: error: parameter 'I_w_mg_30x30' has incomplete type
+  184 | extern const Icon I_w_mg_30x30;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:184:19: error: declaration for parameter 'I_w_mg_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:183:19: error: parameter 'I_w_maxigun_30x30' has incomplete type
+  183 | extern const Icon I_w_maxigun_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:183:19: error: declaration for parameter 'I_w_maxigun_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:182:19: error: parameter 'I_w_laser_cannon_30x30' has incomplete type
+  182 | extern const Icon I_w_laser_cannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:182:19: error: declaration for parameter 'I_w_laser_cannon_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:181:19: error: parameter 'I_w_hmg_30x30' has incomplete type
+  181 | extern const Icon I_w_hmg_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:181:19: error: declaration for parameter 'I_w_hmg_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:180:19: error: parameter 'I_w_grenade_launcher_30x30' has incomplete type
+  180 | extern const Icon I_w_grenade_launcher_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:180:19: error: declaration for parameter 'I_w_grenade_launcher_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:179:19: error: parameter 'I_w_flamethrower_30x30' has incomplete type
+  179 | extern const Icon I_w_flamethrower_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:179:19: error: declaration for parameter 'I_w_flamethrower_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:178:19: error: parameter 'I_w_flag_30x30' has incomplete type
+  178 | extern const Icon I_w_flag_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:178:19: error: declaration for parameter 'I_w_flag_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:177:19: error: parameter 'I_w_epoch_30x30' has incomplete type
+  177 | extern const Icon I_w_epoch_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:177:19: error: declaration for parameter 'I_w_epoch_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:176:19: error: parameter 'I_w_eat_napalm_30x30' has incomplete type
+  176 | extern const Icon I_w_eat_napalm_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:176:19: error: declaration for parameter 'I_w_eat_napalm_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:175:19: error: parameter 'I_w_eat_30x30' has incomplete type
+  175 | extern const Icon I_w_eat_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:175:19: error: declaration for parameter 'I_w_eat_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:174:19: error: parameter 'I_w_de_escalator_30x30' has incomplete type
+  174 | extern const Icon I_w_de_escalator_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:174:19: error: declaration for parameter 'I_w_de_escalator_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:173:19: error: parameter 'I_w_commando_30x30' has incomplete type
+  173 | extern const Icon I_w_commando_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:173:19: error: declaration for parameter 'I_w_commando_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:172:19: error: parameter 'I_w_autocannon_30x30' has incomplete type
+  172 | extern const Icon I_w_autocannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:172:19: error: declaration for parameter 'I_w_autocannon_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:171:19: error: parameter 'I_w_arc_30x30' has incomplete type
+  171 | extern const Icon I_w_arc_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:171:19: error: declaration for parameter 'I_w_arc_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:170:19: error: parameter 'I_w_amr_30x30' has incomplete type
+  170 | extern const Icon I_w_amr_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:170:19: error: declaration for parameter 'I_w_amr_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:169:19: error: parameter 'I_w_airburst_30x30' has incomplete type
+  169 | extern const Icon I_w_airburst_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:169:19: error: declaration for parameter 'I_w_airburst_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:168:19: error: parameter 'I_v_patriot_30x30' has incomplete type
+  168 | extern const Icon I_v_patriot_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:168:19: error: declaration for parameter 'I_v_patriot_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:167:19: error: parameter 'I_v_frv_30x30' has incomplete type
+  167 | extern const Icon I_v_frv_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:167:19: error: declaration for parameter 'I_v_frv_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:166:19: error: parameter 'I_v_emancipator_30x30' has incomplete type
+  166 | extern const Icon I_v_emancipator_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:166:19: error: declaration for parameter 'I_v_emancipator_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:165:19: error: parameter 'I_s_rocket_30x30' has incomplete type
+  165 | extern const Icon I_s_rocket_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:165:19: error: declaration for parameter 'I_s_rocket_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:164:19: error: parameter 'I_s_mortar_30x30' has incomplete type
+  164 | extern const Icon I_s_mortar_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:164:19: error: declaration for parameter 'I_s_mortar_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:163:19: error: parameter 'I_s_mg_30x30' has incomplete type
+  163 | extern const Icon I_s_mg_30x30;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:163:19: error: declaration for parameter 'I_s_mg_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:162:19: error: parameter 'I_s_laser_30x30' has incomplete type
+  162 | extern const Icon I_s_laser_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:162:19: error: declaration for parameter 'I_s_laser_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:161:19: error: parameter 'I_s_gatling_30x30' has incomplete type
+  161 | extern const Icon I_s_gatling_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:161:19: error: declaration for parameter 'I_s_gatling_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:160:19: error: parameter 'I_s_flame_30x30' has incomplete type
+  160 | extern const Icon I_s_flame_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:160:19: error: declaration for parameter 'I_s_flame_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:159:19: error: parameter 'I_s_ems_mortar_30x30' has incomplete type
+  159 | extern const Icon I_s_ems_mortar_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:159:19: error: declaration for parameter 'I_s_ems_mortar_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:158:19: error: parameter 'I_s_blank_30x30' has incomplete type
+  158 | extern const Icon I_s_blank_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:158:19: error: declaration for parameter 'I_s_blank_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:157:19: error: parameter 'I_s_autocannon_30x30' has incomplete type
+  157 | extern const Icon I_s_autocannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:157:19: error: declaration for parameter 'I_s_autocannon_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:156:19: error: parameter 'I_p_warp_30x30' has incomplete type
+  156 | extern const Icon I_p_warp_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:156:19: error: declaration for parameter 'I_p_warp_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:155:19: error: parameter 'I_p_supply_30x30' has incomplete type
+  155 | extern const Icon I_p_supply_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:155:19: error: declaration for parameter 'I_p_supply_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:154:19: error: parameter 'I_p_s_generator_30x30' has incomplete type
+  154 | extern const Icon I_p_s_generator_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:154:19: error: declaration for parameter 'I_p_s_generator_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:153:19: error: parameter 'I_p_s_directional_30x30' has incomplete type
+  153 | extern const Icon I_p_s_directional_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:153:19: error: declaration for parameter 'I_p_s_directional_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:152:19: error: parameter 'I_p_s_ballistic_30x30' has incomplete type
+  152 | extern const Icon I_p_s_ballistic_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:152:19: error: declaration for parameter 'I_p_s_ballistic_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:151:19: error: parameter 'I_p_jump_30x30' has incomplete type
+  151 | extern const Icon I_p_jump_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:151:19: error: declaration for parameter 'I_p_jump_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:150:19: error: parameter 'I_p_hover_30x30' has incomplete type
+  150 | extern const Icon I_p_hover_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:150:19: error: declaration for parameter 'I_p_hover_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:149:19: error: parameter 'I_p_hellbomb_30x30' has incomplete type
+  149 | extern const Icon I_p_hellbomb_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:149:19: error: declaration for parameter 'I_p_hellbomb_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:148:19: error: parameter 'I_orbital_30x30' has incomplete type
+  148 | extern const Icon I_orbital_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:148:19: error: declaration for parameter 'I_orbital_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:147:19: error: parameter 'I_o_walking_30x30' has incomplete type
+  147 | extern const Icon I_o_walking_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:147:19: error: declaration for parameter 'I_o_walking_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:146:19: error: parameter 'I_o_smoke_30x30' has incomplete type
+  146 | extern const Icon I_o_smoke_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:146:19: error: declaration for parameter 'I_o_smoke_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:145:19: error: parameter 'I_o_railcannon_30x30' has incomplete type
+  145 | extern const Icon I_o_railcannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:145:19: error: declaration for parameter 'I_o_railcannon_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:144:19: error: parameter 'I_o_precision_30x30' has incomplete type
+  144 | extern const Icon I_o_precision_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:144:19: error: declaration for parameter 'I_o_precision_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:143:19: error: parameter 'I_o_napalm_30x30' has incomplete type
+  143 | extern const Icon I_o_napalm_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:143:19: error: declaration for parameter 'I_o_napalm_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:142:19: error: parameter 'I_o_laser_30x30' has incomplete type
+  142 | extern const Icon I_o_laser_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:142:19: error: declaration for parameter 'I_o_laser_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:141:19: error: parameter 'I_o_gatling_30x30' has incomplete type
+  141 | extern const Icon I_o_gatling_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:141:19: error: declaration for parameter 'I_o_gatling_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:140:19: error: parameter 'I_o_gas_30x30' has incomplete type
+  140 | extern const Icon I_o_gas_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:140:19: error: declaration for parameter 'I_o_gas_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:139:19: error: parameter 'I_o_ems_30x30' has incomplete type
+  139 | extern const Icon I_o_ems_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:139:19: error: declaration for parameter 'I_o_ems_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:138:19: error: parameter 'I_o_airburst_30x30' has incomplete type
+  138 | extern const Icon I_o_airburst_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:138:19: error: declaration for parameter 'I_o_airburst_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:137:19: error: parameter 'I_o_380mm_30x30' has incomplete type
+  137 | extern const Icon I_o_380mm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:137:19: error: declaration for parameter 'I_o_380mm_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:136:19: error: parameter 'I_o_120mm_30x30' has incomplete type
+  136 | extern const Icon I_o_120mm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:136:19: error: declaration for parameter 'I_o_120mm_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:135:19: error: parameter 'I_m_vessel_30x30' has incomplete type
+  135 | extern const Icon I_m_vessel_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:135:19: error: declaration for parameter 'I_m_vessel_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:134:19: error: parameter 'I_m_upload_30x30' has incomplete type
+  134 | extern const Icon I_m_upload_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:134:19: error: declaration for parameter 'I_m_upload_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:133:19: error: parameter 'I_m_tesla_30x30' has incomplete type
+  133 | extern const Icon I_m_tesla_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:133:19: error: declaration for parameter 'I_m_tesla_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:132:19: error: parameter 'I_m_sssd_30x30' has incomplete type
+  132 | extern const Icon I_m_sssd_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:132:19: error: declaration for parameter 'I_m_sssd_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:131:19: error: parameter 'I_m_sos_30x30' has incomplete type
+  131 | extern const Icon I_m_sos_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:131:19: error: declaration for parameter 'I_m_sos_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:130:19: error: parameter 'I_m_seismic_probe_30x30' has incomplete type
+  130 | extern const Icon I_m_seismic_probe_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:130:19: error: declaration for parameter 'I_m_seismic_probe_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:129:19: error: parameter 'I_m_seaf_artillery_30x30' has incomplete type
+  129 | extern const Icon I_m_seaf_artillery_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:129:19: error: declaration for parameter 'I_m_seaf_artillery_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:128:19: error: parameter 'I_m_resupply_30x30' has incomplete type
+  128 | extern const Icon I_m_resupply_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:128:19: error: declaration for parameter 'I_m_resupply_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:127:19: error: parameter 'I_m_relay_30x30' has incomplete type
+  127 | extern const Icon I_m_relay_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:127:19: error: declaration for parameter 'I_m_relay_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:126:19: error: parameter 'I_m_reinforce_30x30' has incomplete type
+  126 | extern const Icon I_m_reinforce_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:126:19: error: declaration for parameter 'I_m_reinforce_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:125:19: error: parameter 'I_m_rearm_30x30' has incomplete type
+  125 | extern const Icon I_m_rearm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:125:19: error: declaration for parameter 'I_m_rearm_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:124:19: error: parameter 'I_m_incendiary_30x30' has incomplete type
+  124 | extern const Icon I_m_incendiary_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:124:19: error: declaration for parameter 'I_m_incendiary_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:123:19: error: parameter 'I_m_hellbomb_30x30' has incomplete type
+  123 | extern const Icon I_m_hellbomb_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:123:19: error: declaration for parameter 'I_m_hellbomb_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:122:19: error: parameter 'I_m_gas_30x30' has incomplete type
+  122 | extern const Icon I_m_gas_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:122:19: error: declaration for parameter 'I_m_gas_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:121:19: error: parameter 'I_m_flag_30x30' has incomplete type
+  121 | extern const Icon I_m_flag_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:121:19: error: declaration for parameter 'I_m_flag_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:120:19: error: parameter 'I_m_drill_30x30' has incomplete type
+  120 | extern const Icon I_m_drill_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:120:19: error: declaration for parameter 'I_m_drill_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:119:19: error: parameter 'I_m_cargo_30x30' has incomplete type
+  119 | extern const Icon I_m_cargo_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:119:19: error: declaration for parameter 'I_m_cargo_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:118:19: error: parameter 'I_m_battlement_30x30' has incomplete type
+  118 | extern const Icon I_m_battlement_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:118:19: error: declaration for parameter 'I_m_battlement_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:117:19: error: parameter 'I_m_ap_30x30' has incomplete type
+  117 | extern const Icon I_m_ap_30x30;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:117:19: error: declaration for parameter 'I_m_ap_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:116:19: error: parameter 'I_m_antitank_30x30' has incomplete type
+  116 | extern const Icon I_m_antitank_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:116:19: error: declaration for parameter 'I_m_antitank_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:115:19: error: parameter 'I_gd_las_30x30' has incomplete type
+  115 | extern const Icon I_gd_las_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:115:19: error: declaration for parameter 'I_gd_las_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:114:19: error: parameter 'I_gd_gas_30x30' has incomplete type
+  114 | extern const Icon I_gd_gas_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:114:19: error: declaration for parameter 'I_gd_gas_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:113:19: error: parameter 'I_gd_flam_30x30' has incomplete type
+  113 | extern const Icon I_gd_flam_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:113:19: error: declaration for parameter 'I_gd_flam_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:112:19: error: parameter 'I_gd_arc_30x30' has incomplete type
+  112 | extern const Icon I_gd_arc_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:112:19: error: declaration for parameter 'I_gd_arc_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:111:19: error: parameter 'I_gd_30x30' has incomplete type
+  111 | extern const Icon I_gd_30x30;
+      |                   ^~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:111:19: error: declaration for parameter 'I_gd_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:110:19: error: parameter 'I_emp_hmg_30x30' has incomplete type
+  110 | extern const Icon I_emp_hmg_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:110:19: error: declaration for parameter 'I_emp_hmg_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:109:19: error: parameter 'I_emp_antitank_30x30' has incomplete type
+  109 | extern const Icon I_emp_antitank_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:109:19: error: declaration for parameter 'I_emp_antitank_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:108:19: error: parameter 'I_eagle_30x30' has incomplete type
+  108 | extern const Icon I_eagle_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:108:19: error: declaration for parameter 'I_eagle_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:107:19: error: parameter 'I_e_strafing_30x30' has incomplete type
+  107 | extern const Icon I_e_strafing_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:107:19: error: declaration for parameter 'I_e_strafing_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:106:19: error: parameter 'I_e_smoke_30x30' has incomplete type
+  106 | extern const Icon I_e_smoke_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:106:19: error: declaration for parameter 'I_e_smoke_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:105:19: error: parameter 'I_e_silo_30x30' has incomplete type
+  105 | extern const Icon I_e_silo_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:105:19: error: declaration for parameter 'I_e_silo_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:104:19: error: parameter 'I_e_napalm_30x30' has incomplete type
+  104 | extern const Icon I_e_napalm_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:104:19: error: declaration for parameter 'I_e_napalm_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:103:19: error: parameter 'I_e_cluster_30x30' has incomplete type
+  103 | extern const Icon I_e_cluster_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:103:19: error: declaration for parameter 'I_e_cluster_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:102:19: error: parameter 'I_e_airstrike_30x30' has incomplete type
+  102 | extern const Icon I_e_airstrike_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:102:19: error: declaration for parameter 'I_e_airstrike_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:101:19: error: parameter 'I_e_500kg_30x30' has incomplete type
+  101 | extern const Icon I_e_500kg_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:101:19: error: declaration for parameter 'I_e_500kg_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:100:19: error: parameter 'I_e_110mm_30x30' has incomplete type
+  100 | extern const Icon I_e_110mm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:100:19: error: declaration for parameter 'I_e_110mm_30x30' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:99:19: error: parameter 'I_w_wasp_15x15' has incomplete type
+   99 | extern const Icon I_w_wasp_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:99:19: error: declaration for parameter 'I_w_wasp_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:98:19: error: parameter 'I_w_tool_15x15' has incomplete type
+   98 | extern const Icon I_w_tool_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:98:19: error: declaration for parameter 'I_w_tool_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:97:19: error: parameter 'I_w_sterilizer_15x15' has incomplete type
+   97 | extern const Icon I_w_sterilizer_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:97:19: error: declaration for parameter 'I_w_sterilizer_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:96:19: error: parameter 'I_w_stalwart_15x15' has incomplete type
+   96 | extern const Icon I_w_stalwart_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:96:19: error: declaration for parameter 'I_w_stalwart_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:95:19: error: parameter 'I_w_speargun_15x15' has incomplete type
+   95 | extern const Icon I_w_speargun_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:95:19: error: declaration for parameter 'I_w_speargun_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:94:19: error: parameter 'I_w_spear_15x15' has incomplete type
+   94 | extern const Icon I_w_spear_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:94:19: error: declaration for parameter 'I_w_spear_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:93:19: error: parameter 'I_w_recoilless_15x15' has incomplete type
+   93 | extern const Icon I_w_recoilless_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:93:19: error: declaration for parameter 'I_w_recoilless_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:92:19: error: parameter 'I_w_railgun_15x15' has incomplete type
+   92 | extern const Icon I_w_railgun_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:92:19: error: declaration for parameter 'I_w_railgun_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:91:19: error: parameter 'I_w_quasar_15x15' has incomplete type
+   91 | extern const Icon I_w_quasar_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:91:19: error: declaration for parameter 'I_w_quasar_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:90:19: error: parameter 'I_w_mg_15x15' has incomplete type
+   90 | extern const Icon I_w_mg_15x15;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:90:19: error: declaration for parameter 'I_w_mg_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:89:19: error: parameter 'I_w_maxigun_15x15' has incomplete type
+   89 | extern const Icon I_w_maxigun_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:89:19: error: declaration for parameter 'I_w_maxigun_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:88:19: error: parameter 'I_w_laser_cannon_15x15' has incomplete type
+   88 | extern const Icon I_w_laser_cannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:88:19: error: declaration for parameter 'I_w_laser_cannon_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:87:19: error: parameter 'I_w_hmg_15x15' has incomplete type
+   87 | extern const Icon I_w_hmg_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:87:19: error: declaration for parameter 'I_w_hmg_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:86:19: error: parameter 'I_w_grenade_launcher_15x15' has incomplete type
+   86 | extern const Icon I_w_grenade_launcher_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:86:19: error: declaration for parameter 'I_w_grenade_launcher_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:85:19: error: parameter 'I_w_flamethrower_15x15' has incomplete type
+   85 | extern const Icon I_w_flamethrower_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:85:19: error: declaration for parameter 'I_w_flamethrower_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:84:19: error: parameter 'I_w_flag_15x15' has incomplete type
+   84 | extern const Icon I_w_flag_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:84:19: error: declaration for parameter 'I_w_flag_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:83:19: error: parameter 'I_w_epoch_15x15' has incomplete type
+   83 | extern const Icon I_w_epoch_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:83:19: error: declaration for parameter 'I_w_epoch_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:82:19: error: parameter 'I_w_eat_napalm_15x15' has incomplete type
+   82 | extern const Icon I_w_eat_napalm_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:82:19: error: declaration for parameter 'I_w_eat_napalm_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:81:19: error: parameter 'I_w_eat_15x15' has incomplete type
+   81 | extern const Icon I_w_eat_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:81:19: error: declaration for parameter 'I_w_eat_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:80:19: error: parameter 'I_w_de_escalator_15x15' has incomplete type
+   80 | extern const Icon I_w_de_escalator_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:80:19: error: declaration for parameter 'I_w_de_escalator_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:79:19: error: parameter 'I_w_commando_15x15' has incomplete type
+   79 | extern const Icon I_w_commando_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:79:19: error: declaration for parameter 'I_w_commando_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:78:19: error: parameter 'I_w_autocannon_15x15' has incomplete type
+   78 | extern const Icon I_w_autocannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:78:19: error: declaration for parameter 'I_w_autocannon_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:77:19: error: parameter 'I_w_arc_15x15' has incomplete type
+   77 | extern const Icon I_w_arc_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:77:19: error: declaration for parameter 'I_w_arc_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:76:19: error: parameter 'I_w_amr_15x15' has incomplete type
+   76 | extern const Icon I_w_amr_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:76:19: error: declaration for parameter 'I_w_amr_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:75:19: error: parameter 'I_w_airburst_15x15' has incomplete type
+   75 | extern const Icon I_w_airburst_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:75:19: error: declaration for parameter 'I_w_airburst_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:74:19: error: parameter 'I_v_patriot_15x15' has incomplete type
+   74 | extern const Icon I_v_patriot_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:74:19: error: declaration for parameter 'I_v_patriot_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:73:19: error: parameter 'I_v_frv_15x15' has incomplete type
+   73 | extern const Icon I_v_frv_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:73:19: error: declaration for parameter 'I_v_frv_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:72:19: error: parameter 'I_v_emancipator_15x15' has incomplete type
+   72 | extern const Icon I_v_emancipator_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:72:19: error: declaration for parameter 'I_v_emancipator_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:71:19: error: parameter 'I_s_rocket_15x15' has incomplete type
+   71 | extern const Icon I_s_rocket_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:71:19: error: declaration for parameter 'I_s_rocket_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:70:19: error: parameter 'I_s_mortar_15x15' has incomplete type
+   70 | extern const Icon I_s_mortar_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:70:19: error: declaration for parameter 'I_s_mortar_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:69:19: error: parameter 'I_s_mg_15x15' has incomplete type
+   69 | extern const Icon I_s_mg_15x15;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:69:19: error: declaration for parameter 'I_s_mg_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:68:19: error: parameter 'I_s_laser_15x15' has incomplete type
+   68 | extern const Icon I_s_laser_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:68:19: error: declaration for parameter 'I_s_laser_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:67:19: error: parameter 'I_s_gatling_15x15' has incomplete type
+   67 | extern const Icon I_s_gatling_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:67:19: error: declaration for parameter 'I_s_gatling_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:66:19: error: parameter 'I_s_flame_15x15' has incomplete type
+   66 | extern const Icon I_s_flame_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:66:19: error: declaration for parameter 'I_s_flame_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:65:19: error: parameter 'I_s_ems_mortar_15x15' has incomplete type
+   65 | extern const Icon I_s_ems_mortar_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:65:19: error: declaration for parameter 'I_s_ems_mortar_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:64:19: error: parameter 'I_s_blank_15x15' has incomplete type
+   64 | extern const Icon I_s_blank_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:64:19: error: declaration for parameter 'I_s_blank_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:63:19: error: parameter 'I_s_autocannon_15x15' has incomplete type
+   63 | extern const Icon I_s_autocannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:63:19: error: declaration for parameter 'I_s_autocannon_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:62:19: error: parameter 'I_p_warp_15x15' has incomplete type
+   62 | extern const Icon I_p_warp_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:62:19: error: declaration for parameter 'I_p_warp_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:61:19: error: parameter 'I_p_supply_15x15' has incomplete type
+   61 | extern const Icon I_p_supply_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:61:19: error: declaration for parameter 'I_p_supply_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:60:19: error: parameter 'I_p_s_generator_15x15' has incomplete type
+   60 | extern const Icon I_p_s_generator_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:60:19: error: declaration for parameter 'I_p_s_generator_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:59:19: error: parameter 'I_p_s_directional_15x15' has incomplete type
+   59 | extern const Icon I_p_s_directional_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:59:19: error: declaration for parameter 'I_p_s_directional_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:58:19: error: parameter 'I_p_s_ballistic_15x15' has incomplete type
+   58 | extern const Icon I_p_s_ballistic_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:58:19: error: declaration for parameter 'I_p_s_ballistic_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:57:19: error: parameter 'I_p_jump_15x15' has incomplete type
+   57 | extern const Icon I_p_jump_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:57:19: error: declaration for parameter 'I_p_jump_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:56:19: error: parameter 'I_p_hover_15x15' has incomplete type
+   56 | extern const Icon I_p_hover_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:56:19: error: declaration for parameter 'I_p_hover_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:55:19: error: parameter 'I_p_hellbomb_15x15' has incomplete type
+   55 | extern const Icon I_p_hellbomb_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:55:19: error: declaration for parameter 'I_p_hellbomb_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:54:19: error: parameter 'I_o_walking_15x15' has incomplete type
+   54 | extern const Icon I_o_walking_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:54:19: error: declaration for parameter 'I_o_walking_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:53:19: error: parameter 'I_o_smoke_15x15' has incomplete type
+   53 | extern const Icon I_o_smoke_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:53:19: error: declaration for parameter 'I_o_smoke_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:52:19: error: parameter 'I_o_railcannon_15x15' has incomplete type
+   52 | extern const Icon I_o_railcannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:52:19: error: declaration for parameter 'I_o_railcannon_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:51:19: error: parameter 'I_o_precision_15x15' has incomplete type
+   51 | extern const Icon I_o_precision_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:51:19: error: declaration for parameter 'I_o_precision_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:50:19: error: parameter 'I_o_napalm_15x15' has incomplete type
+   50 | extern const Icon I_o_napalm_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:50:19: error: declaration for parameter 'I_o_napalm_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:49:19: error: parameter 'I_o_laser_15x15' has incomplete type
+   49 | extern const Icon I_o_laser_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:49:19: error: declaration for parameter 'I_o_laser_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:48:19: error: parameter 'I_o_gatling_15x15' has incomplete type
+   48 | extern const Icon I_o_gatling_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:48:19: error: declaration for parameter 'I_o_gatling_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:47:19: error: parameter 'I_o_gas_15x15' has incomplete type
+   47 | extern const Icon I_o_gas_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:47:19: error: declaration for parameter 'I_o_gas_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:46:19: error: parameter 'I_o_ems_15x15' has incomplete type
+   46 | extern const Icon I_o_ems_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:46:19: error: declaration for parameter 'I_o_ems_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:45:19: error: parameter 'I_o_airburst_15x15' has incomplete type
+   45 | extern const Icon I_o_airburst_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:45:19: error: declaration for parameter 'I_o_airburst_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:44:19: error: parameter 'I_o_380mm_15x15' has incomplete type
+   44 | extern const Icon I_o_380mm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:44:19: error: declaration for parameter 'I_o_380mm_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:43:19: error: parameter 'I_o_120mm_15x15' has incomplete type
+   43 | extern const Icon I_o_120mm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:43:19: error: declaration for parameter 'I_o_120mm_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:42:19: error: parameter 'I_m_vessel_15x15' has incomplete type
+   42 | extern const Icon I_m_vessel_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:42:19: error: declaration for parameter 'I_m_vessel_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:41:19: error: parameter 'I_m_upload_15x15' has incomplete type
+   41 | extern const Icon I_m_upload_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:41:19: error: declaration for parameter 'I_m_upload_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:40:19: error: parameter 'I_m_tesla_15x15' has incomplete type
+   40 | extern const Icon I_m_tesla_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:40:19: error: declaration for parameter 'I_m_tesla_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:39:19: error: parameter 'I_m_sssd_15x15' has incomplete type
+   39 | extern const Icon I_m_sssd_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:39:19: error: declaration for parameter 'I_m_sssd_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:38:19: error: parameter 'I_m_sos_15x15' has incomplete type
+   38 | extern const Icon I_m_sos_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:38:19: error: declaration for parameter 'I_m_sos_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:37:19: error: parameter 'I_m_seismic_probe_15x15' has incomplete type
+   37 | extern const Icon I_m_seismic_probe_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:37:19: error: declaration for parameter 'I_m_seismic_probe_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:36:19: error: parameter 'I_m_seaf_artillery_15x15' has incomplete type
+   36 | extern const Icon I_m_seaf_artillery_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:36:19: error: declaration for parameter 'I_m_seaf_artillery_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:35:19: error: parameter 'I_m_resupply_15x15' has incomplete type
+   35 | extern const Icon I_m_resupply_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:35:19: error: declaration for parameter 'I_m_resupply_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:34:19: error: parameter 'I_m_relay_15x15' has incomplete type
+   34 | extern const Icon I_m_relay_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:34:19: error: declaration for parameter 'I_m_relay_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:33:19: error: parameter 'I_m_reinforce_15x15' has incomplete type
+   33 | extern const Icon I_m_reinforce_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:33:19: error: declaration for parameter 'I_m_reinforce_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:32:19: error: parameter 'I_m_rearm_15x15' has incomplete type
+   32 | extern const Icon I_m_rearm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:32:19: error: declaration for parameter 'I_m_rearm_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:31:19: error: parameter 'I_m_incendiary_15x15' has incomplete type
+   31 | extern const Icon I_m_incendiary_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:31:19: error: declaration for parameter 'I_m_incendiary_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:30:19: error: parameter 'I_m_hellbomb_15x15' has incomplete type
+   30 | extern const Icon I_m_hellbomb_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:30:19: error: declaration for parameter 'I_m_hellbomb_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:29:19: error: parameter 'I_m_gas_15x15' has incomplete type
+   29 | extern const Icon I_m_gas_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:29:19: error: declaration for parameter 'I_m_gas_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:28:19: error: parameter 'I_m_flag_15x15' has incomplete type
+   28 | extern const Icon I_m_flag_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:28:19: error: declaration for parameter 'I_m_flag_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:27:19: error: parameter 'I_m_drill_15x15' has incomplete type
+   27 | extern const Icon I_m_drill_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:27:19: error: declaration for parameter 'I_m_drill_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:26:19: error: parameter 'I_m_cargo_15x15' has incomplete type
+   26 | extern const Icon I_m_cargo_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:26:19: error: declaration for parameter 'I_m_cargo_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:25:19: error: parameter 'I_m_battlement_15x15' has incomplete type
+   25 | extern const Icon I_m_battlement_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:25:19: error: declaration for parameter 'I_m_battlement_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:24:19: error: parameter 'I_m_ap_15x15' has incomplete type
+   24 | extern const Icon I_m_ap_15x15;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:24:19: error: declaration for parameter 'I_m_ap_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:23:19: error: parameter 'I_m_antitank_15x15' has incomplete type
+   23 | extern const Icon I_m_antitank_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:23:19: error: declaration for parameter 'I_m_antitank_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:22:19: error: parameter 'I_gd_las_15x15' has incomplete type
+   22 | extern const Icon I_gd_las_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:22:19: error: declaration for parameter 'I_gd_las_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:21:19: error: parameter 'I_gd_gas_15x15' has incomplete type
+   21 | extern const Icon I_gd_gas_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:21:19: error: declaration for parameter 'I_gd_gas_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:20:19: error: parameter 'I_gd_flam_15x15' has incomplete type
+   20 | extern const Icon I_gd_flam_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:20:19: error: declaration for parameter 'I_gd_flam_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:19:19: error: parameter 'I_gd_arc_15x15' has incomplete type
+   19 | extern const Icon I_gd_arc_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:19:19: error: declaration for parameter 'I_gd_arc_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:18:19: error: parameter 'I_gd_15x15' has incomplete type
+   18 | extern const Icon I_gd_15x15;
+      |                   ^~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:18:19: error: declaration for parameter 'I_gd_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:17:19: error: parameter 'I_emp_hmg_15x15' has incomplete type
+   17 | extern const Icon I_emp_hmg_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:17:19: error: declaration for parameter 'I_emp_hmg_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:16:19: error: parameter 'I_emp_antitank_15x15' has incomplete type
+   16 | extern const Icon I_emp_antitank_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:16:19: error: declaration for parameter 'I_emp_antitank_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:15:19: error: parameter 'I_eagle_15x15' has incomplete type
+   15 | extern const Icon I_eagle_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:15:19: error: declaration for parameter 'I_eagle_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:14:19: error: parameter 'I_e_strafing_15x15' has incomplete type
+   14 | extern const Icon I_e_strafing_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:14:19: error: declaration for parameter 'I_e_strafing_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:13:19: error: parameter 'I_e_smoke_15x15' has incomplete type
+   13 | extern const Icon I_e_smoke_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:13:19: error: declaration for parameter 'I_e_smoke_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:12:19: error: parameter 'I_e_silo_15x15' has incomplete type
+   12 | extern const Icon I_e_silo_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:12:19: error: declaration for parameter 'I_e_silo_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:11:19: error: parameter 'I_e_napalm_15x15' has incomplete type
+   11 | extern const Icon I_e_napalm_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:11:19: error: declaration for parameter 'I_e_napalm_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:10:19: error: parameter 'I_e_cluster_15x15' has incomplete type
+   10 | extern const Icon I_e_cluster_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:10:19: error: declaration for parameter 'I_e_cluster_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:9:19: error: parameter 'I_e_airstrike_15x15' has incomplete type
+    9 | extern const Icon I_e_airstrike_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:9:19: error: declaration for parameter 'I_e_airstrike_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:8:19: error: parameter 'I_e_500kg_15x15' has incomplete type
+    8 | extern const Icon I_e_500kg_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:8:19: error: declaration for parameter 'I_e_500kg_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:7:19: error: parameter 'I_e_110mm_15x15' has incomplete type
+    7 | extern const Icon I_e_110mm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:7:19: error: declaration for parameter 'I_e_110mm_15x15' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:6:19: error: parameter 'I_hex_10px' has incomplete type
+    6 | extern const Icon I_hex_10px;
+      |                   ^~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:6:19: error: declaration for parameter 'I_hex_10px' but no such parameter
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:5:19: error: parameter 'I_flipper_hero_128x50' has incomplete type
+    5 | extern const Icon I_flipper_hero_128x50;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:5:19: error: declaration for parameter 'I_flipper_hero_128x50' but no such parameter
+In file included from /home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:9:
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.h:7:6: error: declaration for parameter 'load_game_records' but no such parameter
+    7 | bool load_game_records(Record* record);
+      |      ^~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.h:6:6: error: declaration for parameter 'save_game_records' but no such parameter
+    6 | void save_game_records(Record* record);
+      |      ^~~~~~~~~~~~~~~~~
+In file included from /home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:8:
+/home/beckett/Downloads/Flipper/flipper-hero/view/arrows.h:40:6: error: declaration for parameter 'canvas_draw_filled_triangle' but no such parameter
+   40 | void canvas_draw_filled_triangle(
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/view/arrows.h:22:6: error: declaration for parameter 'draw_empty_or_filled_arrow' but no such parameter
+   22 | void draw_empty_or_filled_arrow(
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/view/arrows.h:11:6: error: declaration for parameter 'swap' but no such parameter
+   11 | void swap(int32_t* a, int32_t* b);
+      |      ^~~~
+/home/beckett/Downloads/Flipper/flipper-hero/data/data.h:98:3: error: declaration for parameter 'ArrowDirection' but no such parameter
+   98 | } ArrowDirection;
+      |   ^~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/data/data.h:89:3: error: declaration for parameter 'PluginState' but no such parameter
+   89 | } PluginState;
+      |   ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:649: error: expected '{' at end of input
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/stratagem_data.h:10:6: error: unused parameter 'get_stratagem_seq' [-Werror=unused-parameter]
+   10 | void get_stratagem_seq(char seq_buf[9], int i);
+      |      ^~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/stratagem_data.h:9:7: error: unused parameter 'get_stratagem_icon' [-Werror=unused-parameter]
+    9 | Icon* get_stratagem_icon(int i, bool large_icon);
+      |       ^~~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/stratagem_data.h:8:6: error: unused parameter 'get_stratagem_name' [-Werror=unused-parameter]
+    8 | void get_stratagem_name(char name_buf[32], int i);
+      |      ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:193:19: error: unused parameter 'I_w_wasp_30x30' [-Werror=unused-parameter]
+  193 | extern const Icon I_w_wasp_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:192:19: error: unused parameter 'I_w_tool_30x30' [-Werror=unused-parameter]
+  192 | extern const Icon I_w_tool_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:191:19: error: unused parameter 'I_w_sterilizer_30x30' [-Werror=unused-parameter]
+  191 | extern const Icon I_w_sterilizer_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:190:19: error: unused parameter 'I_w_stalwart_30x30' [-Werror=unused-parameter]
+  190 | extern const Icon I_w_stalwart_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:189:19: error: unused parameter 'I_w_speargun_30x30' [-Werror=unused-parameter]
+  189 | extern const Icon I_w_speargun_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:188:19: error: unused parameter 'I_w_spear_30x30' [-Werror=unused-parameter]
+  188 | extern const Icon I_w_spear_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:187:19: error: unused parameter 'I_w_recoilless_30x30' [-Werror=unused-parameter]
+  187 | extern const Icon I_w_recoilless_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:186:19: error: unused parameter 'I_w_railgun_30x30' [-Werror=unused-parameter]
+  186 | extern const Icon I_w_railgun_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:185:19: error: unused parameter 'I_w_quasar_30x30' [-Werror=unused-parameter]
+  185 | extern const Icon I_w_quasar_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:184:19: error: unused parameter 'I_w_mg_30x30' [-Werror=unused-parameter]
+  184 | extern const Icon I_w_mg_30x30;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:183:19: error: unused parameter 'I_w_maxigun_30x30' [-Werror=unused-parameter]
+  183 | extern const Icon I_w_maxigun_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:182:19: error: unused parameter 'I_w_laser_cannon_30x30' [-Werror=unused-parameter]
+  182 | extern const Icon I_w_laser_cannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:181:19: error: unused parameter 'I_w_hmg_30x30' [-Werror=unused-parameter]
+  181 | extern const Icon I_w_hmg_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:180:19: error: unused parameter 'I_w_grenade_launcher_30x30' [-Werror=unused-parameter]
+  180 | extern const Icon I_w_grenade_launcher_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:179:19: error: unused parameter 'I_w_flamethrower_30x30' [-Werror=unused-parameter]
+  179 | extern const Icon I_w_flamethrower_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:178:19: error: unused parameter 'I_w_flag_30x30' [-Werror=unused-parameter]
+  178 | extern const Icon I_w_flag_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:177:19: error: unused parameter 'I_w_epoch_30x30' [-Werror=unused-parameter]
+  177 | extern const Icon I_w_epoch_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:176:19: error: unused parameter 'I_w_eat_napalm_30x30' [-Werror=unused-parameter]
+  176 | extern const Icon I_w_eat_napalm_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:175:19: error: unused parameter 'I_w_eat_30x30' [-Werror=unused-parameter]
+  175 | extern const Icon I_w_eat_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:174:19: error: unused parameter 'I_w_de_escalator_30x30' [-Werror=unused-parameter]
+  174 | extern const Icon I_w_de_escalator_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:173:19: error: unused parameter 'I_w_commando_30x30' [-Werror=unused-parameter]
+  173 | extern const Icon I_w_commando_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:172:19: error: unused parameter 'I_w_autocannon_30x30' [-Werror=unused-parameter]
+  172 | extern const Icon I_w_autocannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:171:19: error: unused parameter 'I_w_arc_30x30' [-Werror=unused-parameter]
+  171 | extern const Icon I_w_arc_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:170:19: error: unused parameter 'I_w_amr_30x30' [-Werror=unused-parameter]
+  170 | extern const Icon I_w_amr_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:169:19: error: unused parameter 'I_w_airburst_30x30' [-Werror=unused-parameter]
+  169 | extern const Icon I_w_airburst_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:168:19: error: unused parameter 'I_v_patriot_30x30' [-Werror=unused-parameter]
+  168 | extern const Icon I_v_patriot_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:167:19: error: unused parameter 'I_v_frv_30x30' [-Werror=unused-parameter]
+  167 | extern const Icon I_v_frv_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:166:19: error: unused parameter 'I_v_emancipator_30x30' [-Werror=unused-parameter]
+  166 | extern const Icon I_v_emancipator_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:165:19: error: unused parameter 'I_s_rocket_30x30' [-Werror=unused-parameter]
+  165 | extern const Icon I_s_rocket_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:164:19: error: unused parameter 'I_s_mortar_30x30' [-Werror=unused-parameter]
+  164 | extern const Icon I_s_mortar_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:163:19: error: unused parameter 'I_s_mg_30x30' [-Werror=unused-parameter]
+  163 | extern const Icon I_s_mg_30x30;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:162:19: error: unused parameter 'I_s_laser_30x30' [-Werror=unused-parameter]
+  162 | extern const Icon I_s_laser_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:161:19: error: unused parameter 'I_s_gatling_30x30' [-Werror=unused-parameter]
+  161 | extern const Icon I_s_gatling_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:160:19: error: unused parameter 'I_s_flame_30x30' [-Werror=unused-parameter]
+  160 | extern const Icon I_s_flame_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:159:19: error: unused parameter 'I_s_ems_mortar_30x30' [-Werror=unused-parameter]
+  159 | extern const Icon I_s_ems_mortar_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:158:19: error: unused parameter 'I_s_blank_30x30' [-Werror=unused-parameter]
+  158 | extern const Icon I_s_blank_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:157:19: error: unused parameter 'I_s_autocannon_30x30' [-Werror=unused-parameter]
+  157 | extern const Icon I_s_autocannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:156:19: error: unused parameter 'I_p_warp_30x30' [-Werror=unused-parameter]
+  156 | extern const Icon I_p_warp_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:155:19: error: unused parameter 'I_p_supply_30x30' [-Werror=unused-parameter]
+  155 | extern const Icon I_p_supply_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:154:19: error: unused parameter 'I_p_s_generator_30x30' [-Werror=unused-parameter]
+  154 | extern const Icon I_p_s_generator_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:153:19: error: unused parameter 'I_p_s_directional_30x30' [-Werror=unused-parameter]
+  153 | extern const Icon I_p_s_directional_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:152:19: error: unused parameter 'I_p_s_ballistic_30x30' [-Werror=unused-parameter]
+  152 | extern const Icon I_p_s_ballistic_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:151:19: error: unused parameter 'I_p_jump_30x30' [-Werror=unused-parameter]
+  151 | extern const Icon I_p_jump_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:150:19: error: unused parameter 'I_p_hover_30x30' [-Werror=unused-parameter]
+  150 | extern const Icon I_p_hover_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:149:19: error: unused parameter 'I_p_hellbomb_30x30' [-Werror=unused-parameter]
+  149 | extern const Icon I_p_hellbomb_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:148:19: error: unused parameter 'I_orbital_30x30' [-Werror=unused-parameter]
+  148 | extern const Icon I_orbital_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:147:19: error: unused parameter 'I_o_walking_30x30' [-Werror=unused-parameter]
+  147 | extern const Icon I_o_walking_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:146:19: error: unused parameter 'I_o_smoke_30x30' [-Werror=unused-parameter]
+  146 | extern const Icon I_o_smoke_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:145:19: error: unused parameter 'I_o_railcannon_30x30' [-Werror=unused-parameter]
+  145 | extern const Icon I_o_railcannon_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:144:19: error: unused parameter 'I_o_precision_30x30' [-Werror=unused-parameter]
+  144 | extern const Icon I_o_precision_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:143:19: error: unused parameter 'I_o_napalm_30x30' [-Werror=unused-parameter]
+  143 | extern const Icon I_o_napalm_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:142:19: error: unused parameter 'I_o_laser_30x30' [-Werror=unused-parameter]
+  142 | extern const Icon I_o_laser_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:141:19: error: unused parameter 'I_o_gatling_30x30' [-Werror=unused-parameter]
+  141 | extern const Icon I_o_gatling_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:140:19: error: unused parameter 'I_o_gas_30x30' [-Werror=unused-parameter]
+  140 | extern const Icon I_o_gas_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:139:19: error: unused parameter 'I_o_ems_30x30' [-Werror=unused-parameter]
+  139 | extern const Icon I_o_ems_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:138:19: error: unused parameter 'I_o_airburst_30x30' [-Werror=unused-parameter]
+  138 | extern const Icon I_o_airburst_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:137:19: error: unused parameter 'I_o_380mm_30x30' [-Werror=unused-parameter]
+  137 | extern const Icon I_o_380mm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:136:19: error: unused parameter 'I_o_120mm_30x30' [-Werror=unused-parameter]
+  136 | extern const Icon I_o_120mm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:135:19: error: unused parameter 'I_m_vessel_30x30' [-Werror=unused-parameter]
+  135 | extern const Icon I_m_vessel_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:134:19: error: unused parameter 'I_m_upload_30x30' [-Werror=unused-parameter]
+  134 | extern const Icon I_m_upload_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:133:19: error: unused parameter 'I_m_tesla_30x30' [-Werror=unused-parameter]
+  133 | extern const Icon I_m_tesla_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:132:19: error: unused parameter 'I_m_sssd_30x30' [-Werror=unused-parameter]
+  132 | extern const Icon I_m_sssd_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:131:19: error: unused parameter 'I_m_sos_30x30' [-Werror=unused-parameter]
+  131 | extern const Icon I_m_sos_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:130:19: error: unused parameter 'I_m_seismic_probe_30x30' [-Werror=unused-parameter]
+  130 | extern const Icon I_m_seismic_probe_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:129:19: error: unused parameter 'I_m_seaf_artillery_30x30' [-Werror=unused-parameter]
+  129 | extern const Icon I_m_seaf_artillery_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:128:19: error: unused parameter 'I_m_resupply_30x30' [-Werror=unused-parameter]
+  128 | extern const Icon I_m_resupply_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:127:19: error: unused parameter 'I_m_relay_30x30' [-Werror=unused-parameter]
+  127 | extern const Icon I_m_relay_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:126:19: error: unused parameter 'I_m_reinforce_30x30' [-Werror=unused-parameter]
+  126 | extern const Icon I_m_reinforce_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:125:19: error: unused parameter 'I_m_rearm_30x30' [-Werror=unused-parameter]
+  125 | extern const Icon I_m_rearm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:124:19: error: unused parameter 'I_m_incendiary_30x30' [-Werror=unused-parameter]
+  124 | extern const Icon I_m_incendiary_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:123:19: error: unused parameter 'I_m_hellbomb_30x30' [-Werror=unused-parameter]
+  123 | extern const Icon I_m_hellbomb_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:122:19: error: unused parameter 'I_m_gas_30x30' [-Werror=unused-parameter]
+  122 | extern const Icon I_m_gas_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:121:19: error: unused parameter 'I_m_flag_30x30' [-Werror=unused-parameter]
+  121 | extern const Icon I_m_flag_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:120:19: error: unused parameter 'I_m_drill_30x30' [-Werror=unused-parameter]
+  120 | extern const Icon I_m_drill_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:119:19: error: unused parameter 'I_m_cargo_30x30' [-Werror=unused-parameter]
+  119 | extern const Icon I_m_cargo_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:118:19: error: unused parameter 'I_m_battlement_30x30' [-Werror=unused-parameter]
+  118 | extern const Icon I_m_battlement_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:117:19: error: unused parameter 'I_m_ap_30x30' [-Werror=unused-parameter]
+  117 | extern const Icon I_m_ap_30x30;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:116:19: error: unused parameter 'I_m_antitank_30x30' [-Werror=unused-parameter]
+  116 | extern const Icon I_m_antitank_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:115:19: error: unused parameter 'I_gd_las_30x30' [-Werror=unused-parameter]
+  115 | extern const Icon I_gd_las_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:114:19: error: unused parameter 'I_gd_gas_30x30' [-Werror=unused-parameter]
+  114 | extern const Icon I_gd_gas_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:113:19: error: unused parameter 'I_gd_flam_30x30' [-Werror=unused-parameter]
+  113 | extern const Icon I_gd_flam_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:112:19: error: unused parameter 'I_gd_arc_30x30' [-Werror=unused-parameter]
+  112 | extern const Icon I_gd_arc_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:111:19: error: unused parameter 'I_gd_30x30' [-Werror=unused-parameter]
+  111 | extern const Icon I_gd_30x30;
+      |                   ^~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:110:19: error: unused parameter 'I_emp_hmg_30x30' [-Werror=unused-parameter]
+  110 | extern const Icon I_emp_hmg_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:109:19: error: unused parameter 'I_emp_antitank_30x30' [-Werror=unused-parameter]
+  109 | extern const Icon I_emp_antitank_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:108:19: error: unused parameter 'I_eagle_30x30' [-Werror=unused-parameter]
+  108 | extern const Icon I_eagle_30x30;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:107:19: error: unused parameter 'I_e_strafing_30x30' [-Werror=unused-parameter]
+  107 | extern const Icon I_e_strafing_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:106:19: error: unused parameter 'I_e_smoke_30x30' [-Werror=unused-parameter]
+  106 | extern const Icon I_e_smoke_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:105:19: error: unused parameter 'I_e_silo_30x30' [-Werror=unused-parameter]
+  105 | extern const Icon I_e_silo_30x30;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:104:19: error: unused parameter 'I_e_napalm_30x30' [-Werror=unused-parameter]
+  104 | extern const Icon I_e_napalm_30x30;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:103:19: error: unused parameter 'I_e_cluster_30x30' [-Werror=unused-parameter]
+  103 | extern const Icon I_e_cluster_30x30;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:102:19: error: unused parameter 'I_e_airstrike_30x30' [-Werror=unused-parameter]
+  102 | extern const Icon I_e_airstrike_30x30;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:101:19: error: unused parameter 'I_e_500kg_30x30' [-Werror=unused-parameter]
+  101 | extern const Icon I_e_500kg_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:100:19: error: unused parameter 'I_e_110mm_30x30' [-Werror=unused-parameter]
+  100 | extern const Icon I_e_110mm_30x30;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:99:19: error: unused parameter 'I_w_wasp_15x15' [-Werror=unused-parameter]
+   99 | extern const Icon I_w_wasp_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:98:19: error: unused parameter 'I_w_tool_15x15' [-Werror=unused-parameter]
+   98 | extern const Icon I_w_tool_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:97:19: error: unused parameter 'I_w_sterilizer_15x15' [-Werror=unused-parameter]
+   97 | extern const Icon I_w_sterilizer_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:96:19: error: unused parameter 'I_w_stalwart_15x15' [-Werror=unused-parameter]
+   96 | extern const Icon I_w_stalwart_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:95:19: error: unused parameter 'I_w_speargun_15x15' [-Werror=unused-parameter]
+   95 | extern const Icon I_w_speargun_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:94:19: error: unused parameter 'I_w_spear_15x15' [-Werror=unused-parameter]
+   94 | extern const Icon I_w_spear_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:93:19: error: unused parameter 'I_w_recoilless_15x15' [-Werror=unused-parameter]
+   93 | extern const Icon I_w_recoilless_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:92:19: error: unused parameter 'I_w_railgun_15x15' [-Werror=unused-parameter]
+   92 | extern const Icon I_w_railgun_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:91:19: error: unused parameter 'I_w_quasar_15x15' [-Werror=unused-parameter]
+   91 | extern const Icon I_w_quasar_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:90:19: error: unused parameter 'I_w_mg_15x15' [-Werror=unused-parameter]
+   90 | extern const Icon I_w_mg_15x15;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:89:19: error: unused parameter 'I_w_maxigun_15x15' [-Werror=unused-parameter]
+   89 | extern const Icon I_w_maxigun_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:88:19: error: unused parameter 'I_w_laser_cannon_15x15' [-Werror=unused-parameter]
+   88 | extern const Icon I_w_laser_cannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:87:19: error: unused parameter 'I_w_hmg_15x15' [-Werror=unused-parameter]
+   87 | extern const Icon I_w_hmg_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:86:19: error: unused parameter 'I_w_grenade_launcher_15x15' [-Werror=unused-parameter]
+   86 | extern const Icon I_w_grenade_launcher_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:85:19: error: unused parameter 'I_w_flamethrower_15x15' [-Werror=unused-parameter]
+   85 | extern const Icon I_w_flamethrower_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:84:19: error: unused parameter 'I_w_flag_15x15' [-Werror=unused-parameter]
+   84 | extern const Icon I_w_flag_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:83:19: error: unused parameter 'I_w_epoch_15x15' [-Werror=unused-parameter]
+   83 | extern const Icon I_w_epoch_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:82:19: error: unused parameter 'I_w_eat_napalm_15x15' [-Werror=unused-parameter]
+   82 | extern const Icon I_w_eat_napalm_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:81:19: error: unused parameter 'I_w_eat_15x15' [-Werror=unused-parameter]
+   81 | extern const Icon I_w_eat_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:80:19: error: unused parameter 'I_w_de_escalator_15x15' [-Werror=unused-parameter]
+   80 | extern const Icon I_w_de_escalator_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:79:19: error: unused parameter 'I_w_commando_15x15' [-Werror=unused-parameter]
+   79 | extern const Icon I_w_commando_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:78:19: error: unused parameter 'I_w_autocannon_15x15' [-Werror=unused-parameter]
+   78 | extern const Icon I_w_autocannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:77:19: error: unused parameter 'I_w_arc_15x15' [-Werror=unused-parameter]
+   77 | extern const Icon I_w_arc_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:76:19: error: unused parameter 'I_w_amr_15x15' [-Werror=unused-parameter]
+   76 | extern const Icon I_w_amr_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:75:19: error: unused parameter 'I_w_airburst_15x15' [-Werror=unused-parameter]
+   75 | extern const Icon I_w_airburst_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:74:19: error: unused parameter 'I_v_patriot_15x15' [-Werror=unused-parameter]
+   74 | extern const Icon I_v_patriot_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:73:19: error: unused parameter 'I_v_frv_15x15' [-Werror=unused-parameter]
+   73 | extern const Icon I_v_frv_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:72:19: error: unused parameter 'I_v_emancipator_15x15' [-Werror=unused-parameter]
+   72 | extern const Icon I_v_emancipator_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:71:19: error: unused parameter 'I_s_rocket_15x15' [-Werror=unused-parameter]
+   71 | extern const Icon I_s_rocket_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:70:19: error: unused parameter 'I_s_mortar_15x15' [-Werror=unused-parameter]
+   70 | extern const Icon I_s_mortar_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:69:19: error: unused parameter 'I_s_mg_15x15' [-Werror=unused-parameter]
+   69 | extern const Icon I_s_mg_15x15;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:68:19: error: unused parameter 'I_s_laser_15x15' [-Werror=unused-parameter]
+   68 | extern const Icon I_s_laser_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:67:19: error: unused parameter 'I_s_gatling_15x15' [-Werror=unused-parameter]
+   67 | extern const Icon I_s_gatling_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:66:19: error: unused parameter 'I_s_flame_15x15' [-Werror=unused-parameter]
+   66 | extern const Icon I_s_flame_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:65:19: error: unused parameter 'I_s_ems_mortar_15x15' [-Werror=unused-parameter]
+   65 | extern const Icon I_s_ems_mortar_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:64:19: error: unused parameter 'I_s_blank_15x15' [-Werror=unused-parameter]
+   64 | extern const Icon I_s_blank_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:63:19: error: unused parameter 'I_s_autocannon_15x15' [-Werror=unused-parameter]
+   63 | extern const Icon I_s_autocannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:62:19: error: unused parameter 'I_p_warp_15x15' [-Werror=unused-parameter]
+   62 | extern const Icon I_p_warp_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:61:19: error: unused parameter 'I_p_supply_15x15' [-Werror=unused-parameter]
+   61 | extern const Icon I_p_supply_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:60:19: error: unused parameter 'I_p_s_generator_15x15' [-Werror=unused-parameter]
+   60 | extern const Icon I_p_s_generator_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:59:19: error: unused parameter 'I_p_s_directional_15x15' [-Werror=unused-parameter]
+   59 | extern const Icon I_p_s_directional_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:58:19: error: unused parameter 'I_p_s_ballistic_15x15' [-Werror=unused-parameter]
+   58 | extern const Icon I_p_s_ballistic_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:57:19: error: unused parameter 'I_p_jump_15x15' [-Werror=unused-parameter]
+   57 | extern const Icon I_p_jump_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:56:19: error: unused parameter 'I_p_hover_15x15' [-Werror=unused-parameter]
+   56 | extern const Icon I_p_hover_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:55:19: error: unused parameter 'I_p_hellbomb_15x15' [-Werror=unused-parameter]
+   55 | extern const Icon I_p_hellbomb_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:54:19: error: unused parameter 'I_o_walking_15x15' [-Werror=unused-parameter]
+   54 | extern const Icon I_o_walking_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:53:19: error: unused parameter 'I_o_smoke_15x15' [-Werror=unused-parameter]
+   53 | extern const Icon I_o_smoke_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:52:19: error: unused parameter 'I_o_railcannon_15x15' [-Werror=unused-parameter]
+   52 | extern const Icon I_o_railcannon_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:51:19: error: unused parameter 'I_o_precision_15x15' [-Werror=unused-parameter]
+   51 | extern const Icon I_o_precision_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:50:19: error: unused parameter 'I_o_napalm_15x15' [-Werror=unused-parameter]
+   50 | extern const Icon I_o_napalm_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:49:19: error: unused parameter 'I_o_laser_15x15' [-Werror=unused-parameter]
+   49 | extern const Icon I_o_laser_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:48:19: error: unused parameter 'I_o_gatling_15x15' [-Werror=unused-parameter]
+   48 | extern const Icon I_o_gatling_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:47:19: error: unused parameter 'I_o_gas_15x15' [-Werror=unused-parameter]
+   47 | extern const Icon I_o_gas_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:46:19: error: unused parameter 'I_o_ems_15x15' [-Werror=unused-parameter]
+   46 | extern const Icon I_o_ems_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:45:19: error: unused parameter 'I_o_airburst_15x15' [-Werror=unused-parameter]
+   45 | extern const Icon I_o_airburst_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:44:19: error: unused parameter 'I_o_380mm_15x15' [-Werror=unused-parameter]
+   44 | extern const Icon I_o_380mm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:43:19: error: unused parameter 'I_o_120mm_15x15' [-Werror=unused-parameter]
+   43 | extern const Icon I_o_120mm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:42:19: error: unused parameter 'I_m_vessel_15x15' [-Werror=unused-parameter]
+   42 | extern const Icon I_m_vessel_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:41:19: error: unused parameter 'I_m_upload_15x15' [-Werror=unused-parameter]
+   41 | extern const Icon I_m_upload_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:40:19: error: unused parameter 'I_m_tesla_15x15' [-Werror=unused-parameter]
+   40 | extern const Icon I_m_tesla_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:39:19: error: unused parameter 'I_m_sssd_15x15' [-Werror=unused-parameter]
+   39 | extern const Icon I_m_sssd_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:38:19: error: unused parameter 'I_m_sos_15x15' [-Werror=unused-parameter]
+   38 | extern const Icon I_m_sos_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:37:19: error: unused parameter 'I_m_seismic_probe_15x15' [-Werror=unused-parameter]
+   37 | extern const Icon I_m_seismic_probe_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:36:19: error: unused parameter 'I_m_seaf_artillery_15x15' [-Werror=unused-parameter]
+   36 | extern const Icon I_m_seaf_artillery_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:35:19: error: unused parameter 'I_m_resupply_15x15' [-Werror=unused-parameter]
+   35 | extern const Icon I_m_resupply_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:34:19: error: unused parameter 'I_m_relay_15x15' [-Werror=unused-parameter]
+   34 | extern const Icon I_m_relay_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:33:19: error: unused parameter 'I_m_reinforce_15x15' [-Werror=unused-parameter]
+   33 | extern const Icon I_m_reinforce_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:32:19: error: unused parameter 'I_m_rearm_15x15' [-Werror=unused-parameter]
+   32 | extern const Icon I_m_rearm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:31:19: error: unused parameter 'I_m_incendiary_15x15' [-Werror=unused-parameter]
+   31 | extern const Icon I_m_incendiary_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:30:19: error: unused parameter 'I_m_hellbomb_15x15' [-Werror=unused-parameter]
+   30 | extern const Icon I_m_hellbomb_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:29:19: error: unused parameter 'I_m_gas_15x15' [-Werror=unused-parameter]
+   29 | extern const Icon I_m_gas_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:28:19: error: unused parameter 'I_m_flag_15x15' [-Werror=unused-parameter]
+   28 | extern const Icon I_m_flag_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:27:19: error: unused parameter 'I_m_drill_15x15' [-Werror=unused-parameter]
+   27 | extern const Icon I_m_drill_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:26:19: error: unused parameter 'I_m_cargo_15x15' [-Werror=unused-parameter]
+   26 | extern const Icon I_m_cargo_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:25:19: error: unused parameter 'I_m_battlement_15x15' [-Werror=unused-parameter]
+   25 | extern const Icon I_m_battlement_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:24:19: error: unused parameter 'I_m_ap_15x15' [-Werror=unused-parameter]
+   24 | extern const Icon I_m_ap_15x15;
+      |                   ^~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:23:19: error: unused parameter 'I_m_antitank_15x15' [-Werror=unused-parameter]
+   23 | extern const Icon I_m_antitank_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:22:19: error: unused parameter 'I_gd_las_15x15' [-Werror=unused-parameter]
+   22 | extern const Icon I_gd_las_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:21:19: error: unused parameter 'I_gd_gas_15x15' [-Werror=unused-parameter]
+   21 | extern const Icon I_gd_gas_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:20:19: error: unused parameter 'I_gd_flam_15x15' [-Werror=unused-parameter]
+   20 | extern const Icon I_gd_flam_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:19:19: error: unused parameter 'I_gd_arc_15x15' [-Werror=unused-parameter]
+   19 | extern const Icon I_gd_arc_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:18:19: error: unused parameter 'I_gd_15x15' [-Werror=unused-parameter]
+   18 | extern const Icon I_gd_15x15;
+      |                   ^~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:17:19: error: unused parameter 'I_emp_hmg_15x15' [-Werror=unused-parameter]
+   17 | extern const Icon I_emp_hmg_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:16:19: error: unused parameter 'I_emp_antitank_15x15' [-Werror=unused-parameter]
+   16 | extern const Icon I_emp_antitank_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:15:19: error: unused parameter 'I_eagle_15x15' [-Werror=unused-parameter]
+   15 | extern const Icon I_eagle_15x15;
+      |                   ^~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:14:19: error: unused parameter 'I_e_strafing_15x15' [-Werror=unused-parameter]
+   14 | extern const Icon I_e_strafing_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:13:19: error: unused parameter 'I_e_smoke_15x15' [-Werror=unused-parameter]
+   13 | extern const Icon I_e_smoke_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:12:19: error: unused parameter 'I_e_silo_15x15' [-Werror=unused-parameter]
+   12 | extern const Icon I_e_silo_15x15;
+      |                   ^~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:11:19: error: unused parameter 'I_e_napalm_15x15' [-Werror=unused-parameter]
+   11 | extern const Icon I_e_napalm_15x15;
+      |                   ^~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:10:19: error: unused parameter 'I_e_cluster_15x15' [-Werror=unused-parameter]
+   10 | extern const Icon I_e_cluster_15x15;
+      |                   ^~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:9:19: error: unused parameter 'I_e_airstrike_15x15' [-Werror=unused-parameter]
+    9 | extern const Icon I_e_airstrike_15x15;
+      |                   ^~~~~~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:8:19: error: unused parameter 'I_e_500kg_15x15' [-Werror=unused-parameter]
+    8 | extern const Icon I_e_500kg_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:7:19: error: unused parameter 'I_e_110mm_15x15' [-Werror=unused-parameter]
+    7 | extern const Icon I_e_110mm_15x15;
+      |                   ^~~~~~~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:6:19: error: unused parameter 'I_hex_10px' [-Werror=unused-parameter]
+    6 | extern const Icon I_hex_10px;
+      |                   ^~~~~~~~~~
+/home/beckett/.ufbt/build/flipper_hero/flipper_hero_icons.h:5:19: error: unused parameter 'I_flipper_hero_128x50' [-Werror=unused-parameter]
+    5 | extern const Icon I_flipper_hero_128x50;
+      |                   ^~~~~~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.h:7:6: error: unused parameter 'load_game_records' [-Werror=unused-parameter]
+    7 | bool load_game_records(Record* record);
+      |      ^~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/helpers/storage.h:6:6: error: unused parameter 'save_game_records' [-Werror=unused-parameter]
+    6 | void save_game_records(Record* record);
+      |      ^~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/view/arrows.h:40:6: error: unused parameter 'canvas_draw_filled_triangle' [-Werror=unused-parameter]
+   40 | void canvas_draw_filled_triangle(
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/view/arrows.h:22:6: error: unused parameter 'draw_empty_or_filled_arrow' [-Werror=unused-parameter]
+   22 | void draw_empty_or_filled_arrow(
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/view/arrows.h:11:6: error: unused parameter 'swap' [-Werror=unused-parameter]
+   11 | void swap(int32_t* a, int32_t* b);
+      |      ^~~~
+/home/beckett/Downloads/Flipper/flipper-hero/data/data.h:98:3: error: unused parameter 'ArrowDirection' [-Werror=unused-parameter]
+   98 | } ArrowDirection;
+      |   ^~~~~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/data/data.h:89:3: error: unused parameter 'PluginState' [-Werror=unused-parameter]
+   89 | } PluginState;
+      |   ^~~~~~~~~~~
+/home/beckett/Downloads/Flipper/flipper-hero/flipper_hero.c:649: error: control reaches end of non-void function [-Werror=return-type]
+cc1: all warnings being treated as errors
+scons: *** [/home/beckett/.ufbt/build/flipper_hero/flipper_hero.o] Error 1
