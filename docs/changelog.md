@@ -1,3 +1,28 @@
+## v1.4
+- Updated for SDK version 1.4.3
+- Added all stratagems (as of Helldivers 2 version 1.005.001)
+- Created and implemented stratagem icons and stratagem queue
+- Replaced randomly-generated sequences with aforementioned stratagems.
+- Added stratagem name display.
+- Implemented distinct rounds to more closely resemble Stratagem Hero
+- Added end-of-round bonuses
+- Added "special rounds" with accompanying splash text before them
+- Added saved high score
+- Updated pre-game and game over screens to show high score (And high round on game over screen)
+- Marquee effect on names that don't fit in the frame
+- Added jingles at game over/end of rounds
+- Added settings menu with the following options:
+- - Whether or not to use stratagems that aren't in Stratagem Hero
+- - Enable/disable sound
+- - Where to draw the current stratagem (center, or offset to the left)
+- Added ability to save settings
+- Reorganized some code structure:
+- - Moved rendering code to its own file
+- - Created dedicated files for stratagem data
+- - Moved input handling from flipper_hero_app() to its own function
+- Used sound code from Doom by xMasterX at https://github.com/xMasterX/all-the-plugins/tree/dev/base_pack/doom
+- Separate files are saved for high score storage and config storage. I did this because it was a much bigger headache than using one file for both
+
 ## v1.3
 
 - Updated for SDK version 1.3.0-rc f7 compatibility

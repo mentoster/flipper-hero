@@ -18,15 +18,20 @@ Welcome to **Flipper Hero**, an engaging typing practice game ported for the Fli
 
 ## Screenshots
 
-![1](./screenshots/flipper_hero_1.png)
+![1](./screenshots/Screenshot-1.png)
 
-![2](./screenshots/flipper_hero_2.png)
+![2](./screenshots/Screenshot-2.png)
 
-![3](./screenshots/flipper_hero_3.png)
+![3](./screenshots/Screenshot-3.png)
 
+![4](./screenshots/Screenshot-4.png)
 ## Introduction
 
 **Flipper Hero** is inspired by the beloved minigame "Stratagem Hero, " found in the "Helldivers 2" universe. Situated on your Ship, this game becomes a crucial part of your journey, allowing you to practice typing Stratagem Codes flawlessly. The better you perform, the higher your score!
+Flipper Hero has been updated to more closely resemble its inspiration, Stratagem Hero from Helldivers 2.
+A pause menu has been added with a few settings. It can be accessed by pressing the "BACK" button. Settings can be saved by pressing the "OK" button in the settings menu.
+The "New Strgms:" option in the settings menu enables the inclusion of stratagems not in Stratagem Hero. This includes stratagems from warbonds, and mission-specific stratagems.
+
 
 ## Features
 
