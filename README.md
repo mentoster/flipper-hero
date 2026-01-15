@@ -68,6 +68,6 @@ Encounter a bug or have a question? Please open an issue on our GitHub repositor
 Flipper Hero is released under the ``MIT license``, which allows for personal use, modification, and distribution.
 
 ## Acknowledgements
-
+* A huge thank you to [@bigb4321](https://github.com/bigb4321) for the substantial work on Flipper Hero.[@bigb4321](https://github.com/bigb4321) brought full Helldivers 2 stratagem support (with icons, names, and a visible queue), proper round structure with bonuses and special rounds, new audio/jingles, and persistent high scores and settings.
 * A special thanks to Arrowhead for creating "Helldivers 2" and inspiring this project. Flipper Hero is a fan-made project intended for practice and entertainment purposes only.
 * Huge thanks to [u/theblackhole08](https://www.reddit.com/user/theblackhole08/) ([@theblackhole](https://github.com/theblackhole/) on github)  for tips to fix api mismatch.
